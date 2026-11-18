@@ -1,0 +1,819 @@
+{
+  "title": "Kenapa Judi Online sangat Sulit Diberantas di Indonesia",
+  "language": "id",
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "theme": {
+    "background": "#0F172A",
+    "accent": "#F59E0B",
+    "text": "#F8FAFC",
+    "fontHeading": "Poppins",
+    "fontBody": "Inter",
+    "cinematicOverlay": true
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 7,
+      "visual": {
+        "type": "three",
+        "preset": "network-nodes",
+        "camera": {
+          "from": [
+            0,
+            1.5,
+            6.6
+          ],
+          "to": [
+            0.3,
+            0.7,
+            5.0
+          ],
+          "fov": 42,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "data": {
+          "headline": "JARINGAN RAKSASA",
+          "nodes": [
+            {
+              "id": "core",
+              "label": "OPERATOR",
+              "sublabel": "PUSAT",
+              "size": 1.3,
+              "highlight": true
+            },
+            {
+              "id": "m1",
+              "label": "SITUS MIRROR",
+              "sublabel": "DOMAIN",
+              "size": 0.95,
+              "highlight": false
+            },
+            {
+              "id": "m2",
+              "label": "SERVER ASING",
+              "sublabel": "CLOUD",
+              "size": 0.95,
+              "highlight": false
+            },
+            {
+              "id": "m3",
+              "label": "REKENING",
+              "sublabel": "LAPISAN",
+              "size": 0.95,
+              "highlight": false
+            },
+            {
+              "id": "m4",
+              "label": "AFILIASI",
+              "sublabel": "PROMOSI",
+              "size": 0.95,
+              "highlight": true
+            }
+          ],
+          "autoRotateSpeed": 0.18
+        }
+      },
+      "on_screen_text": "Jaringan raksasa",
+      "motion": "zoom_in",
+      "transition": "fade"
+    },
+    {
+      "id": 2,
+      "start": 7,
+      "end": 15,
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "camera": {
+          "from": [
+            0.5,
+            1.2,
+            6.2
+          ],
+          "to": [
+            -0.3,
+            0.5,
+            4.9
+          ],
+          "fov": 42,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "data": {
+          "cards": [
+            {
+              "label": "PEMBLOKIRAN",
+              "title": "1 Situs Diblokir",
+              "value": "TERTUTUP",
+              "subtitle": "Akses ISP diputus sementara",
+              "highlight": false
+            },
+            {
+              "label": "REGENERASI CEPAT",
+              "title": "Puluhan Domain Baru",
+              "value": "< 1 JAM",
+              "subtitle": "Aplikasi cadangan langsung aktif kembali",
+              "highlight": true
+            }
+          ],
+          "autoRotateSpeed": 0.14
+        }
+      },
+      "on_screen_text": "Situs baru muncul",
+      "motion": "zoom_out",
+      "transition": "fade"
+    },
+    {
+      "id": 3,
+      "start": 15,
+      "end": 25,
+      "visual": {
+        "type": "three",
+        "preset": "network-nodes",
+        "colors": {
+          "secondary": "#38BDF8"
+        },
+        "camera": {
+          "from": [
+            -0.6,
+            1.6,
+            6.5
+          ],
+          "to": [
+            0.4,
+            0.8,
+            5.2
+          ],
+          "fov": 42,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "data": {
+          "nodes": [
+            {
+              "id": "id",
+              "label": "YURISDIKSI RI",
+              "sublabel": "HUKUM LOKAL",
+              "size": 1.2,
+              "highlight": true
+            },
+            {
+              "id": "s1",
+              "label": "SERVER A",
+              "sublabel": "LUAR NEGERI",
+              "size": 0.95,
+              "highlight": false
+            },
+            {
+              "id": "s2",
+              "label": "SERVER B",
+              "sublabel": "LINTAS BATAS",
+              "size": 0.95,
+              "highlight": false
+            },
+            {
+              "id": "s3",
+              "label": "PROXY CDN",
+              "sublabel": "ENKRIPSI",
+              "size": 0.95,
+              "highlight": false
+            }
+          ],
+          "autoRotateSpeed": -0.16
+        }
+      },
+      "on_screen_text": "Batas yurisdiksi",
+      "motion": "zoom_in",
+      "transition": "fade"
+    },
+    {
+      "id": 4,
+      "start": 25,
+      "end": 34,
+      "visual": {
+        "type": "three",
+        "preset": "paper-flip-stage",
+        "camera": {
+          "from": [
+            0,
+            2.8,
+            5.6
+          ],
+          "to": [
+            0,
+            2.1,
+            4.5
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "data": {
+          "cards": [
+            {
+              "label": "LAPISAN 01",
+              "title": "Identitas Fiktif",
+              "value": "KTP PALSU",
+              "subtitle": "Akun didaftarkan memakai data curian",
+              "highlight": false
+            },
+            {
+              "label": "LAPISAN 02",
+              "title": "Rekening Pinjaman",
+              "value": "NOMINEE",
+              "subtitle": "Aliran dana korban diputar berlapis",
+              "highlight": true
+            }
+          ],
+          "autoRotateSpeed": 0.1
+        }
+      },
+      "on_screen_text": "Uang dikaburkan",
+      "motion": "zoom_out",
+      "transition": "fade"
+    },
+    {
+      "id": 5,
+      "start": 34,
+      "end": 44.246,
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "camera": {
+          "from": [
+            -0.4,
+            1.3,
+            6.3
+          ],
+          "to": [
+            0.3,
+            0.5,
+            4.8
+          ],
+          "fov": 42,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "data": {
+          "cards": [
+            {
+              "label": "MEDIA SOSIAL",
+              "title": "Iklan Terselubung",
+              "subtitle": "Menyamar sebagai konten hiburan biasa",
+              "highlight": false
+            },
+            {
+              "label": "PESAN PRIBADI",
+              "title": "Tautan Undangan",
+              "value": "TARGETED",
+              "subtitle": "Sulit dicurigai oleh pengguna awam",
+              "highlight": true
+            }
+          ],
+          "autoRotateSpeed": 0.14
+        }
+      },
+      "on_screen_text": "Menyusup di media sosial",
+      "motion": "zoom_in",
+      "transition": "fade"
+    },
+    {
+      "id": 6,
+      "start": 44.246,
+      "end": 52.683,
+      "visual": {
+        "type": "three",
+        "preset": "isometric-blocks",
+        "camera": {
+          "from": [
+            1.4,
+            2.4,
+            6.2
+          ],
+          "to": [
+            -1.0,
+            1.9,
+            5.1
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            -0.2,
+            0
+          ]
+        },
+        "data": {
+          "blocks": [
+            {
+              "label": "PELUANG MENANG",
+              "value": 12,
+              "displayValue": "12%",
+              "highlight": false
+            },
+            {
+              "label": "KONTROL SISTEM",
+              "value": 88,
+              "displayValue": "88%",
+              "highlight": true
+            }
+          ],
+          "autoRotateSpeed": 0.12
+        }
+      },
+      "on_screen_text": "Peluang diatur",
+      "motion": "zoom_out",
+      "transition": "fade"
+    },
+    {
+      "id": 7,
+      "start": 52.683,
+      "end": 61.723,
+      "visual": {
+        "type": "three",
+        "preset": "isometric-blocks",
+        "colors": {
+          "accent": "#EF4444"
+        },
+        "camera": {
+          "from": [
+            -1.2,
+            2.2,
+            6.2
+          ],
+          "to": [
+            1.1,
+            1.9,
+            5.0
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            -0.2,
+            0
+          ]
+        },
+        "data": {
+          "blocks": [
+            {
+              "label": "TABUNGAN",
+              "value": 45,
+              "displayValue": "HABIS",
+              "highlight": false
+            },
+            {
+              "label": "UANG KELUARGA",
+              "value": 72,
+              "displayValue": "TERPAKAI",
+              "highlight": false
+            },
+            {
+              "label": "PINJOL",
+              "value": 100,
+              "displayValue": "MENUMPUK",
+              "highlight": true
+            }
+          ],
+          "autoRotateSpeed": 0.12
+        }
+      },
+      "on_screen_text": "Kecanduan menambah setoran",
+      "motion": "zoom_in",
+      "transition": "fade"
+    },
+    {
+      "id": 8,
+      "start": 61.723,
+      "end": 70.161,
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "accent": "#EF4444"
+        },
+        "camera": {
+          "from": [
+            0.3,
+            1.3,
+            6.2
+          ],
+          "to": [
+            -0.2,
+            0.5,
+            4.9
+          ],
+          "fov": 42,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "data": {
+          "cards": [
+            {
+              "label": "DAMPAK SOSIAL",
+              "title": "Lingkaran Utang & Tekanan",
+              "value": "KRISIS",
+              "subtitle": "Memicu konflik dan keretakan rumah tangga",
+              "highlight": true
+            }
+          ],
+          "autoRotateSpeed": 0.12
+        }
+      },
+      "on_screen_text": "Utang dan tekanan",
+      "motion": "zoom_out",
+      "transition": "fade"
+    },
+    {
+      "id": 9,
+      "start": 70.161,
+      "end": 79.201,
+      "visual": {
+        "type": "three",
+        "preset": "paper-flip-stage",
+        "camera": {
+          "from": [
+            0.4,
+            2.7,
+            5.6
+          ],
+          "to": [
+            -0.3,
+            2.1,
+            4.6
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "data": {
+          "cards": [
+            {
+              "label": "HAMBATAN 01",
+              "title": "Rasa Malu & Takut",
+              "subtitle": "Korban memilih diam daripada melapor",
+              "highlight": false
+            },
+            {
+              "label": "HAMBATAN 02",
+              "title": "Minim Informasi Aduan",
+              "value": "TIDAK MELAPOR",
+              "subtitle": "Bingung harus mengadu ke lembaga mana",
+              "highlight": true
+            }
+          ],
+          "autoRotateSpeed": 0.1
+        }
+      },
+      "on_screen_text": "Korban diam",
+      "motion": "zoom_in",
+      "transition": "fade"
+    },
+    {
+      "id": 10,
+      "start": 79.201,
+      "end": 88.241,
+      "visual": {
+        "type": "three",
+        "preset": "paper-flip-stage",
+        "camera": {
+          "from": [
+            -0.4,
+            2.7,
+            5.6
+          ],
+          "to": [
+            0.3,
+            2.1,
+            4.6
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "data": {
+          "cards": [
+            {
+              "label": "INVESTIGASI",
+              "title": "Data Laporan Tidak Lengkap",
+              "value": "TERHAMBAT",
+              "subtitle": "Pemetaan jaringan dan pelacakan aktor melambat",
+              "highlight": true
+            }
+          ],
+          "autoRotateSpeed": -0.1
+        }
+      },
+      "on_screen_text": "Pemetaan sulit",
+      "motion": "zoom_out",
+      "transition": "fade"
+    },
+    {
+      "id": 11,
+      "start": 88.241,
+      "end": 97.281,
+      "visual": {
+        "type": "three",
+        "preset": "network-nodes",
+        "camera": {
+          "from": [
+            0.5,
+            1.4,
+            6.5
+          ],
+          "to": [
+            -0.4,
+            0.7,
+            5.0
+          ],
+          "fov": 42,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "data": {
+          "nodes": [
+            {
+              "id": "src",
+              "label": "DANA KORBAN",
+              "sublabel": "SUMBER",
+              "size": 1.25,
+              "highlight": true
+            },
+            {
+              "id": "t1",
+              "label": "PULSA",
+              "sublabel": "PECAHAN",
+              "size": 0.95,
+              "highlight": false
+            },
+            {
+              "id": "t2",
+              "label": "E-WALLET",
+              "sublabel": "DOMPET DIGITAL",
+              "size": 0.95,
+              "highlight": false
+            },
+            {
+              "id": "t3",
+              "label": "KRIPTO",
+              "sublabel": "ASET DIGITAL",
+              "size": 0.95,
+              "highlight": true
+            },
+            {
+              "id": "t4",
+              "label": "AKUN KECIL",
+              "sublabel": "TERSEBAR",
+              "size": 0.95,
+              "highlight": false
+            }
+          ],
+          "autoRotateSpeed": 0.18
+        }
+      },
+      "on_screen_text": "Transaksi dipecah",
+      "motion": "pan_right",
+      "transition": "fade"
+    },
+    {
+      "id": 12,
+      "start": 97.281,
+      "end": 106.924,
+      "visual": {
+        "type": "three",
+        "preset": "isometric-blocks",
+        "colors": {
+          "secondary": "#38BDF8"
+        },
+        "camera": {
+          "from": [
+            1.3,
+            2.3,
+            6.2
+          ],
+          "to": [
+            -1.0,
+            1.9,
+            5.0
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            -0.2,
+            0
+          ]
+        },
+        "data": {
+          "blocks": [
+            {
+              "label": "BIROKRASI",
+              "value": 90,
+              "displayValue": "LAMBAT",
+              "highlight": false
+            },
+            {
+              "label": "PINDAH LOKASI",
+              "value": 95,
+              "displayValue": "CEPAT",
+              "highlight": true
+            }
+          ],
+          "autoRotateSpeed": 0.12
+        }
+      },
+      "on_screen_text": "Kolaborasi butuh waktu",
+      "motion": "zoom_in",
+      "transition": "fade"
+    },
+    {
+      "id": 13,
+      "start": 106.924,
+      "end": 115.362,
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "camera": {
+          "from": [
+            -0.3,
+            1.3,
+            6.2
+          ],
+          "to": [
+            0.3,
+            0.5,
+            4.9
+          ],
+          "fov": 42,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "data": {
+          "cards": [
+            {
+              "label": "KAMUFLASE",
+              "title": "Layanan Afiliasi",
+              "value": "KEDOK LEGAL",
+              "subtitle": "Operator bersembunyi di balik citra bisnis biasa",
+              "highlight": true
+            }
+          ],
+          "autoRotateSpeed": 0.14
+        }
+      },
+      "on_screen_text": "Bisnis kedok",
+      "motion": "zoom_out",
+      "transition": "fade"
+    },
+    {
+      "id": 14,
+      "start": 115.362,
+      "end": 123.799,
+      "visual": {
+        "type": "three",
+        "preset": "network-nodes",
+        "camera": {
+          "from": [
+            0,
+            1.5,
+            6.5
+          ],
+          "to": [
+            0.3,
+            0.7,
+            5.0
+          ],
+          "fov": 42,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "data": {
+          "nodes": [
+            {
+              "id": "inf",
+              "label": "INFLUENCER",
+              "sublabel": "REKRUTMEN",
+              "size": 1.25,
+              "highlight": true
+            },
+            {
+              "id": "k1",
+              "label": "KOMUNITAS",
+              "sublabel": "GRUP",
+              "size": 0.95,
+              "highlight": false
+            },
+            {
+              "id": "k2",
+              "label": "TESTIMONI",
+              "sublabel": "PALSU",
+              "size": 0.95,
+              "highlight": false
+            },
+            {
+              "id": "k3",
+              "label": "KORBAN BARU",
+              "sublabel": "JANGKAUAN",
+              "size": 0.95,
+              "highlight": true
+            }
+          ],
+          "autoRotateSpeed": 0.16
+        }
+      },
+      "on_screen_text": "Kepercayaan palsu",
+      "motion": "zoom_in",
+      "transition": "fade"
+    },
+    {
+      "id": 15,
+      "start": 123.799,
+      "end": 130.76,
+      "visual": {
+        "type": "three",
+        "preset": "isometric-blocks",
+        "colors": {
+          "accent": "#10B981"
+        },
+        "camera": {
+          "from": [
+            -1.2,
+            2.3,
+            6.2
+          ],
+          "to": [
+            1.0,
+            1.9,
+            5.0
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            -0.2,
+            0
+          ]
+        },
+        "data": {
+          "blocks": [
+            {
+              "label": "LITERASI DIGITAL",
+              "value": 42,
+              "displayValue": "BELUM MERATA",
+              "highlight": false
+            },
+            {
+              "label": "KEWASPADAAN",
+              "value": 95,
+              "displayValue": "KUNCI UTAMA",
+              "highlight": true
+            }
+          ],
+          "autoRotateSpeed": 0.12
+        }
+      },
+      "on_screen_text": "Literasi belum merata",
+      "motion": "zoom_out",
+      "transition": "fade"
+    }
+  ],
+  "audio": {
+    "file": "audio/audio.wav",
+    "transcript": "audio/transcript.srt"
+  }
+}

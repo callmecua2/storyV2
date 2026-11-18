@@ -1,0 +1,1087 @@
+{
+  "version": "storyV2",
+  "meta": {
+    "title": "Kenapa Judi Online Sangat Sulit Diberantas di Indonesia",
+    "resolution": { "width": 1080, "height": 1920, "fps": 30 },
+    "audio": "audio/audio.mp3",
+    "transcript": "audio/transcript.srt",
+    "duration": 243.144
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 7.8,
+      "on_screen_text": "Judol Tetap Hidup",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "camera": {
+          "from": [0, 1.5, 6.5],
+          "to": [0.3, 0.7, 4.9],
+          "fov": 42,
+          "lookAt": [0, 0.1, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": 0.08,
+          "cards": [
+            {
+              "label": "Fakta",
+              "title": "Judol Ilegal, Tapi Tetap Merajalela",
+              "value": "IRONI BESAR",
+              "subtitle": "Pemerintah bilang 'tidak ada ampun' — namun situs judol tetap berseliweran di HP kita setiap hari.",
+              "highlight": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 2,
+      "start": 7.8,
+      "end": 15.02,
+      "on_screen_text": "Respons Pemerintah",
+      "motion": "pan_right",
+      "transition": "slide",
+      "visual": {
+        "type": "three",
+        "preset": "network-nodes",
+        "camera": {
+          "from": [0, 1.5, 6.5],
+          "to": [0.3, 0.7, 4.9],
+          "fov": 42,
+          "lookAt": [0, 0.1, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": 0.12,
+          "nodes": [
+            { "id": "pemerintah", "label": "Pemerintah", "sublabel": "Komdigi · OJK · Polisi", "size": 1.25, "highlight": true },
+            { "id": "menteri", "label": "Menteri Turun Gunung", "sublabel": "Kebijakan keras anti-judol", "size": 0.95, "highlight": false },
+            { "id": "komdigi", "label": "Komdigi 24 Jam", "sublabel": "Pemblokiran konten masif", "size": 0.95, "highlight": false },
+            { "id": "ojk", "label": "OJK Blokir Rekening", "sublabel": "Pembekuan aset judol", "size": 0.95, "highlight": false },
+            { "id": "polisi", "label": "Polisi Tangkap Bandar", "sublabel": "Penegakan hukum langsung", "size": 0.95, "highlight": false }
+          ]
+        }
+      }
+    },
+    {
+      "id": 3,
+      "start": 15.02,
+      "end": 22.5,
+      "on_screen_text": "Masalah Domestik",
+      "motion": "pan_left",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "camera": {
+          "from": [-0.5, 1.8, 6.8],
+          "to": [0.4, 0.9, 5.2],
+          "fov": 42,
+          "lookAt": [0, 0.1, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#EF4444",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": -0.09,
+          "cards": [
+            {
+              "label": "Realita",
+              "title": "Batas Negara Bukan Satu-satunya Masalah",
+              "value": "MASALAH INTERNAL",
+              "subtitle": "Di dalam negeri pun permasalahan judol sudah cukup ramai dan kompleks.",
+              "highlight": true
+            },
+            {
+              "label": "AI Rugos",
+              "title": "Sistem Komdigi Merayapi Situs Judol",
+              "value": "SEJAK 2022",
+              "subtitle": "Teknologi AI dikerahkan untuk deteksi dan takedown otomatis konten judi.",
+              "highlight": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 4,
+      "start": 22.5,
+      "end": 32.18,
+      "on_screen_text": "58.000 Situs Dihapus",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "isometric-blocks",
+        "camera": {
+          "from": [-1.4, 2.3, 6.2],
+          "to": [1.1, 1.9, 5.0],
+          "fov": 40,
+          "lookAt": [0, -0.2, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": 0.11,
+          "blocks": [
+            { "label": "Situs go.id Ditakedown", "value": 58000, "displayValue": "58.000+", "highlight": true },
+            { "label": "Periode Waktu", "value": 3, "displayValue": "2022–2025", "highlight": false },
+            { "label": "AI Rugos Aktif", "value": 1, "displayValue": "24/7 Aktif", "highlight": false }
+          ]
+        }
+      }
+    },
+    {
+      "id": 5,
+      "start": 32.18,
+      "end": 40.68,
+      "on_screen_text": "Mirror Domain Muncul",
+      "motion": "pan_right",
+      "transition": "slide",
+      "visual": {
+        "type": "three",
+        "preset": "network-nodes",
+        "camera": {
+          "from": [0.5, 1.6, 6.3],
+          "to": [-0.4, 0.8, 4.7],
+          "fov": 42,
+          "lookAt": [0, 0.1, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#EF4444",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": -0.14,
+          "nodes": [
+            { "id": "blokir", "label": "Blokir Satu Pintu", "sublabel": "Pemerintah menutup situs utama", "size": 1.25, "highlight": true },
+            { "id": "mirror1", "label": "Mirror Domain A", "sublabel": "Muncul dalam hitungan menit", "size": 0.95, "highlight": false },
+            { "id": "mirror2", "label": "Mirror Domain B", "sublabel": "Jalur cadangan aktif", "size": 0.95, "highlight": false },
+            { "id": "belakang", "label": "Pintu Belakang", "sublabel": "Jalur tersembunyi situs judol", "size": 0.95, "highlight": false },
+            { "id": "terowongan", "label": "Terowongan Digital", "sublabel": "Subdomain & enkripsi baru", "size": 0.95, "highlight": false }
+          ]
+        }
+      }
+    },
+    {
+      "id": 6,
+      "start": 40.68,
+      "end": 49.44,
+      "on_screen_text": "1,6 Juta Konten Diblokir",
+      "motion": "zoom_out",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "isometric-blocks",
+        "camera": {
+          "from": [-1.6, 2.5, 6.4],
+          "to": [0.9, 1.8, 5.1],
+          "fov": 40,
+          "lookAt": [0, -0.2, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": 0.13,
+          "blocks": [
+            { "label": "Konten Judol Diblokir 2025", "value": 1600000, "displayValue": "1,6 Juta+", "highlight": true },
+            { "label": "Kategori: Situs", "value": 10000, "displayValue": "10.000 Situs", "highlight": false },
+            { "label": "Tautan Medsos & Aplikasi", "value": 1590000, "displayValue": "Medsos & App", "highlight": false }
+          ]
+        }
+      }
+    },
+    {
+      "id": 7,
+      "start": 49.44,
+      "end": 58.32,
+      "on_screen_text": "76% Pakai Cloudflare",
+      "motion": "pan_left",
+      "transition": "slide",
+      "visual": {
+        "type": "three",
+        "preset": "isometric-blocks",
+        "camera": {
+          "from": [-1.2, 2.1, 6.0],
+          "to": [1.3, 1.7, 4.8],
+          "fov": 40,
+          "lookAt": [0, -0.2, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#38BDF8",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": -0.10,
+          "blocks": [
+            { "label": "Situs Judol Pakai Cloudflare", "value": 76, "displayValue": "76%", "highlight": true },
+            { "label": "Total Situs Diteliti", "value": 10000, "displayValue": "10.000 Situs", "highlight": false },
+            { "label": "Waktu Pindah Domain", "value": 1, "displayValue": "< 1 Menit", "highlight": false }
+          ]
+        }
+      }
+    },
+    {
+      "id": 8,
+      "start": 58.32,
+      "end": 65.48,
+      "on_screen_text": "Perisai Cloudflare",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "network-nodes",
+        "camera": {
+          "from": [0, 1.5, 6.5],
+          "to": [0.3, 0.7, 4.9],
+          "fov": 42,
+          "lookAt": [0, 0.1, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#38BDF8",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": 0.15,
+          "nodes": [
+            { "id": "cloudflare", "label": "Cloudflare CDN", "sublabel": "IP tersembunyi · domain cepat berpindah", "size": 1.25, "highlight": true },
+            { "id": "judol-site", "label": "Situs Judol", "sublabel": "Dilindungi di balik Cloudflare", "size": 0.95, "highlight": false },
+            { "id": "ip-mask", "label": "IP Masking", "sublabel": "IP asli server tidak terlacak", "size": 0.95, "highlight": false },
+            { "id": "domain-swap", "label": "Domain Swap", "sublabel": "Domain baru dalam hitungan menit", "size": 0.95, "highlight": false }
+          ]
+        }
+      }
+    },
+    {
+      "id": 9,
+      "start": 65.48,
+      "end": 73.46,
+      "on_screen_text": "Dilema Blokir Cloudflare",
+      "motion": "pan_right",
+      "transition": "slide",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "camera": {
+          "from": [-0.6, 1.9, 6.7],
+          "to": [0.5, 1.0, 5.3],
+          "fov": 42,
+          "lookAt": [0, 0.1, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#EF4444",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": -0.12,
+          "cards": [
+            {
+              "label": "Ancaman Pemerintah",
+              "title": "Blokir Cloudflare Seluruhnya?",
+              "value": "BUMERANG",
+              "subtitle": "Cloudflare juga menopang layanan publik dan komersial legal — memblokir = memadamkan api ke seluruh kompleks.",
+              "highlight": true
+            },
+            {
+              "label": "Dampak Samping",
+              "title": "Layanan Publik Ikut Terdampak",
+              "value": "RISIKO TINGGI",
+              "subtitle": "Ribuan situs bisnis dan pemerintahan bergantung pada infrastruktur Cloudflare.",
+              "highlight": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 10,
+      "start": 73.46,
+      "end": 81.4,
+      "on_screen_text": "VPN Gratisan Mafia",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "network-nodes",
+        "camera": {
+          "from": [0.4, 1.7, 6.6],
+          "to": [-0.3, 0.8, 5.0],
+          "fov": 42,
+          "lookAt": [0, 0.1, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#38BDF8",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": 0.16,
+          "nodes": [
+            { "id": "vpn", "label": "VPN Gratisan", "sublabel": "Diduga disediakan mafia judol", "size": 1.25, "highlight": true },
+            { "id": "isp-block", "label": "Blokir ISP", "sublabel": "DNS & IP filtering oleh ISP", "size": 0.95, "highlight": false },
+            { "id": "bypass", "label": "Bypass Blokir", "sublabel": "Situs terbuka seolah dari Singapura", "size": 0.95, "highlight": false },
+            { "id": "user", "label": "Pengguna Judol", "sublabel": "Cukup aktifkan VPN — akses bebas", "size": 0.95, "highlight": false }
+          ]
+        }
+      }
+    },
+    {
+      "id": 11,
+      "start": 81.4,
+      "end": 89.96,
+      "on_screen_text": "Warnet Kendal: Sarang Judol",
+      "motion": "pan_left",
+      "transition": "slide",
+      "visual": {
+        "type": "three",
+        "preset": "paper-flip-stage",
+        "camera": {
+          "from": [-0.3, 2.7, 5.6],
+          "to": [0.3, 2.1, 4.6],
+          "fov": 40,
+          "lookAt": [0, 0.1, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#EF4444",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": -0.11,
+          "cards": [
+            {
+              "label": "Kasus Nyata",
+              "title": "Warnet di Kendal Jadi Sarang Judol",
+              "value": "TERBUKTI",
+              "subtitle": "VPN terpasang di jaringan lokal warnet — semua pengguna otomatis bypass pemblokiran ISP tanpa sadar.",
+              "highlight": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 12,
+      "start": 89.96,
+      "end": 98.6,
+      "on_screen_text": "Blokir ISP Tak Efektif",
+      "motion": "zoom_out",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "camera": {
+          "from": [0.6, 2.0, 7.0],
+          "to": [-0.2, 1.1, 5.4],
+          "fov": 42,
+          "lookAt": [0, 0.1, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#EF4444",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": 0.09,
+          "cards": [
+            {
+              "label": "Efektivitas ISP Block",
+              "title": "Hanya Efektif untuk Pengguna Awam",
+              "value": "TERBATAS",
+              "subtitle": "Pemain dan bandar sudah siap: APK khusus + enkripsi end-to-end membuat blokir ISP tidak berarti.",
+              "highlight": true
+            },
+            {
+              "label": "Senjata Bandar",
+              "title": "APK Khusus & Enkripsi",
+              "value": "SELALU SIAP",
+              "subtitle": "Infrastruktur bandar dirancang sejak awal untuk melewati setiap lapisan pemblokiran.",
+              "highlight": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 13,
+      "start": 98.6,
+      "end": 107.32,
+      "on_screen_text": "30.000 Rekening Diblokir",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "isometric-blocks",
+        "camera": {
+          "from": [-1.5, 2.4, 6.3],
+          "to": [1.0, 1.8, 4.9],
+          "fov": 40,
+          "lookAt": [0, -0.2, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": -0.13,
+          "blocks": [
+            { "label": "Rekening Diblokir OJK", "value": 30000, "displayValue": "30.000+", "highlight": true },
+            { "label": "Periode Blokir", "value": 2, "displayValue": "2023–2025", "highlight": false },
+            { "label": "Pemain Judol (PPATK)", "value": 12000000, "displayValue": "12 Juta Orang", "highlight": false }
+          ]
+        }
+      }
+    },
+    {
+      "id": 14,
+      "start": 107.32,
+      "end": 115.84,
+      "on_screen_text": "12 Juta Pemain Judol",
+      "motion": "pan_right",
+      "transition": "slide",
+      "visual": {
+        "type": "three",
+        "preset": "isometric-blocks",
+        "camera": {
+          "from": [-1.3, 2.2, 6.1],
+          "to": [1.2, 1.6, 4.7],
+          "fov": 40,
+          "lookAt": [0, -0.2, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#EF4444",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": 0.14,
+          "blocks": [
+            { "label": "Total Pemain Aktif", "value": 12000000, "displayValue": "12 Juta", "highlight": true },
+            { "label": "Temuan Lembaga", "value": 1, "displayValue": "Data PPATK", "highlight": false },
+            { "label": "Potensi Transaksi/Hari", "value": 100000000000, "displayValue": "Rp Triliun", "highlight": false }
+          ]
+        }
+      }
+    },
+    {
+      "id": 15,
+      "start": 115.84,
+      "end": 124.72,
+      "on_screen_text": "QRIS: 70% Deposit Judol",
+      "motion": "pan_left",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "camera": {
+          "from": [-0.6, 1.9, 6.7],
+          "to": [0.5, 0.9, 5.1],
+          "fov": 42,
+          "lookAt": [0, 0.1, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": -0.15,
+          "cards": [
+            {
+              "label": "QRIS Kuasai Deposit",
+              "title": "70% Setoran Judol Kini via QRIS",
+              "value": "70% DEPOSIT",
+              "subtitle": "QRIS lebih praktis dan langsung terintegrasi — bandar beralih masif setelah rekening bank diblokir OJK.",
+              "highlight": true
+            },
+            {
+              "label": "Skala Masalah",
+              "title": "30.000+ Rekening Sudah Diblokir",
+              "value": "TAPI BERLANJUT",
+              "subtitle": "Pemblokiran rekening justru mempercepat adopsi QRIS di ekosistem judol sebagai kanal pembayaran utama.",
+              "highlight": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 16,
+      "start": 124.72,
+      "end": 133.96,
+      "on_screen_text": "Celah Merchant QRIS",
+      "motion": "zoom_in",
+      "transition": "slide",
+      "visual": {
+        "type": "three",
+        "preset": "paper-flip-stage",
+        "camera": {
+          "from": [-0.3, 2.7, 5.6],
+          "to": [0.3, 2.1, 4.6],
+          "fov": 40,
+          "lookAt": [0, 0.1, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#EF4444",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": 0.10,
+          "cards": [
+            {
+              "label": "ASPI & Regulasi",
+              "title": "Izin Merchant Bisa Dicabut",
+              "value": "TAPI...",
+              "subtitle": "Merchant bisa siapa saja: warung kopi, toko kelontong, bahkan rekening pinjaman online yang sulit dideteksi.",
+              "highlight": true
+            },
+            {
+              "label": "Realita Lapangan",
+              "title": "Verifikasi Merchant Sangat Lemah",
+              "value": "CELAH BESAR",
+              "subtitle": "Proses KYC merchant QRIS tidak dirancang untuk mendeteksi penyalahgunaan dana judol secara real time.",
+              "highlight": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 17,
+      "start": 133.96,
+      "end": 142.72,
+      "on_screen_text": "Mule Account Rp1 Juta",
+      "motion": "pan_right",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "paper-flip-stage",
+        "camera": {
+          "from": [-0.5, 2.9, 5.8],
+          "to": [0.4, 2.2, 4.7],
+          "fov": 40,
+          "lookAt": [0, 0.1, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#EF4444",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": -0.12,
+          "cards": [
+            {
+              "label": "Mule Account",
+              "title": "Rekening Dijual Rp100rb–1 Juta",
+              "value": "KORBAN: WARGA BIASA",
+              "subtitle": "Mahasiswa dan ibu rumah tangga menjual rekening mereka — tanpa tahu dipakai menampung dana judol.",
+              "highlight": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 18,
+      "start": 142.72,
+      "end": 151.22,
+      "on_screen_text": "Efek Jera Nol",
+      "motion": "zoom_out",
+      "transition": "slide",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "camera": {
+          "from": [0.7, 2.1, 7.1],
+          "to": [-0.1, 1.2, 5.5],
+          "fov": 42,
+          "lookAt": [0, 0.1, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#EF4444",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": 0.08,
+          "cards": [
+            {
+              "label": "Siklus Blokir-Beli",
+              "title": "OJK Blokir → Bandar Beli Rekening Baru",
+              "value": "EFEK JERA = NOL",
+              "subtitle": "Setiap rekening diblokir, bandar cukup beli rekening baru. Supply mule account tidak pernah habis.",
+              "highlight": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 19,
+      "start": 151.22,
+      "end": 160.26,
+      "on_screen_text": "Kripto & E-Wallet",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "network-nodes",
+        "camera": {
+          "from": [0, 1.5, 6.5],
+          "to": [0.3, 0.7, 4.9],
+          "fov": 42,
+          "lookAt": [0, 0.1, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#38BDF8",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": 0.17,
+          "nodes": [
+            { "id": "layering", "label": "Layering Kripto", "sublabel": "Penyamaran aliran dana judol", "size": 1.25, "highlight": true },
+            { "id": "ewallet", "label": "E-Wallet", "sublabel": "GoPay · OVO · Dana dimanfaatkan", "size": 0.95, "highlight": false },
+            { "id": "virtual-acc", "label": "Virtual Account", "sublabel": "Sulit dilacak secara real time", "size": 0.95, "highlight": false },
+            { "id": "exchanger", "label": "Exchanger Luar Negeri", "sublabel": "Dana keluar ke yurisdiksi asing", "size": 0.95, "highlight": false },
+            { "id": "ojk-struggle", "label": "OJK Kesulitan", "sublabel": "Pelacakan transaksi semakin sulit", "size": 0.95, "highlight": false }
+          ]
+        }
+      }
+    },
+    {
+      "id": 20,
+      "start": 160.26,
+      "end": 168.48,
+      "on_screen_text": "Koordinasi Antarlembaga",
+      "motion": "pan_left",
+      "transition": "slide",
+      "visual": {
+        "type": "three",
+        "preset": "network-nodes",
+        "camera": {
+          "from": [-0.8, 1.9, 6.6],
+          "to": [0.6, 0.9, 5.0],
+          "fov": 42,
+          "lookAt": [0, 0.1, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": -0.13,
+          "nodes": [
+            { "id": "komdigi2", "label": "Komdigi", "sublabel": "Pemblokiran konten & situs", "size": 1.25, "highlight": true },
+            { "id": "ojk2", "label": "OJK", "sublabel": "Blokir rekening judol", "size": 0.95, "highlight": false },
+            { "id": "ppatk", "label": "PPATK", "sublabel": "Lacak aliran dana ilegal", "size": 0.95, "highlight": false },
+            { "id": "bi", "label": "Bank Indonesia", "sublabel": "Regulasi sistem pembayaran", "size": 0.95, "highlight": false },
+            { "id": "polri", "label": "Penegak Hukum", "sublabel": "Penangkapan bandar & operator", "size": 0.95, "highlight": false }
+          ]
+        }
+      }
+    },
+    {
+      "id": 21,
+      "start": 168.48,
+      "end": 176.88,
+      "on_screen_text": "Jeda Administratif Berbahaya",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "camera": {
+          "from": [0.5, 1.8, 6.6],
+          "to": [-0.3, 0.9, 5.1],
+          "fov": 42,
+          "lookAt": [0, 0.1, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#EF4444",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": 0.11,
+          "cards": [
+            {
+              "label": "Koordinasi Belum Real Time",
+              "title": "Jeda Administratif Dimanfaatkan Bandar",
+              "value": "CELAH KRITIS",
+              "subtitle": "Sebelum rekening diblokir, ada jeda waktu yang cukup bagi bandar untuk memindahkan seluruh dana.",
+              "highlight": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 22,
+      "start": 176.88,
+      "end": 185.48,
+      "on_screen_text": "AI + Jutaan Blokir",
+      "motion": "pan_right",
+      "transition": "slide",
+      "visual": {
+        "type": "three",
+        "preset": "isometric-blocks",
+        "camera": {
+          "from": [-1.5, 2.3, 6.2],
+          "to": [1.0, 1.9, 5.0],
+          "fov": 40,
+          "lookAt": [0, -0.2, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": -0.09,
+          "blocks": [
+            { "label": "AI Sudah Dikerahkan", "value": 1, "displayValue": "AI Aktif", "highlight": true },
+            { "label": "Konten Diblokir", "value": 1600000, "displayValue": "1,6 Juta+", "highlight": false },
+            { "label": "Rekening Ditutup", "value": 30000, "displayValue": "30.000+", "highlight": false },
+            { "label": "Judol Tetap Hidup", "value": 1, "displayValue": "MASIH ADA", "highlight": false }
+          ]
+        }
+      }
+    },
+    {
+      "id": 23,
+      "start": 185.48,
+      "end": 193.78,
+      "on_screen_text": "Ekosistem Terfragmentasi",
+      "motion": "zoom_out",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "network-nodes",
+        "camera": {
+          "from": [0.6, 2.0, 7.0],
+          "to": [-0.4, 1.0, 5.4],
+          "fov": 42,
+          "lookAt": [0, 0.1, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#EF4444",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": 0.18,
+          "nodes": [
+            { "id": "ekosistem", "label": "Ekosistem Judol", "sublabel": "Bergerak lebih cepat dari birokrasi", "size": 1.25, "highlight": true },
+            { "id": "simpul1", "label": "Simpul Diputus", "sublabel": "Pemerintah tutup satu jalur", "size": 0.95, "highlight": false },
+            { "id": "simpul2", "label": "Simpul Baru Tumbuh", "sublabel": "Langsung ganti domain/rekening", "size": 0.95, "highlight": false },
+            { "id": "birokrasi", "label": "Birokrasi Lambat", "sublabel": "Proses administratif membutuhkan waktu", "size": 0.95, "highlight": false }
+          ]
+        }
+      }
+    },
+    {
+      "id": 24,
+      "start": 193.78,
+      "end": 202.62,
+      "on_screen_text": "Whack-a-Mole Digital",
+      "motion": "pan_left",
+      "transition": "slide",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "camera": {
+          "from": [-0.7, 2.0, 6.8],
+          "to": [0.5, 1.1, 5.2],
+          "fov": 42,
+          "lookAt": [0, 0.1, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#EF4444",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": -0.16,
+          "cards": [
+            {
+              "label": "Analogi Tepat",
+              "title": "Whack-a-Mole yang Sudah Upgrade",
+              "value": "VPN + QRIS + KRIPTO",
+              "subtitle": "Setiap simpul diputus, simpul baru tumbuh. Mole-nya kini bersenjata teknologi finansial mutakhir.",
+              "highlight": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 25,
+      "start": 202.62,
+      "end": 210.14,
+      "on_screen_text": "Jangan Menyerah",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "camera": {
+          "from": [0, 1.5, 6.5],
+          "to": [0.3, 0.7, 4.9],
+          "fov": 42,
+          "lookAt": [0, 0.1, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#10B981",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": 0.09,
+          "cards": [
+            {
+              "label": "Sikap",
+              "title": "Apakah Ini Berarti Menyerah?",
+              "value": "TENTU TIDAK",
+              "subtitle": "Perjuangan harus berlanjut — tapi strategi harus berevolusi melampaui sekadar blokir dan tutup rekening.",
+              "highlight": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 26,
+      "start": 210.14,
+      "end": 219.38,
+      "on_screen_text": "Solusi di Hulu",
+      "motion": "pan_right",
+      "transition": "slide",
+      "visual": {
+        "type": "three",
+        "preset": "paper-flip-stage",
+        "camera": {
+          "from": [-0.3, 2.7, 5.6],
+          "to": [0.3, 2.1, 4.6],
+          "fov": 40,
+          "lookAt": [0, 0.1, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#10B981",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": -0.10,
+          "cards": [
+            {
+              "label": "Celah Teknis Hulu",
+              "title": "Pengawasan Cloudflare Proporsional",
+              "value": "LANGKAH 1",
+              "subtitle": "Kolaborasi dengan Cloudflare untuk flagging otomatis konten judol tanpa blokir massal layanan legal.",
+              "highlight": true
+            },
+            {
+              "label": "Verifikasi Ketat",
+              "title": "KYC Merchant QRIS Diperkuat",
+              "value": "LANGKAH 2",
+              "subtitle": "Validasi merchant real time dan sistem deteksi transaksi mencurigakan terintegrasi BI-OJK-PPATK.",
+              "highlight": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 27,
+      "start": 219.38,
+      "end": 228.48,
+      "on_screen_text": "Literasi Digital Masif",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "camera": {
+          "from": [-0.4, 1.7, 6.6],
+          "to": [0.4, 0.8, 5.0],
+          "fov": 42,
+          "lookAt": [0, 0.1, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#10B981",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": 0.12,
+          "cards": [
+            {
+              "label": "Solusi Jangka Panjang",
+              "title": "Literasi Digital yang Masif & Merata",
+              "value": "LANGKAH 3",
+              "subtitle": "Tanpa edukasi publik yang masif, demand judol tidak akan pernah turun — blokir teknis hanya mengurangi supply.",
+              "highlight": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 28,
+      "start": 228.48,
+      "end": 236.62,
+      "on_screen_text": "Drama Belum Berakhir",
+      "motion": "pan_left",
+      "transition": "slide",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "camera": {
+          "from": [0.5, 2.0, 6.9],
+          "to": [-0.3, 1.1, 5.3],
+          "fov": 42,
+          "lookAt": [0, 0.1, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": -0.14,
+          "cards": [
+            {
+              "label": "Kesimpulan",
+              "title": "Perang Ini Akan Terus Berlanjut",
+              "value": "TAWA GETIR",
+              "subtitle": "Selama solusi masih sebatas blokir tanpa menutup celah hulu, kita hanya jadi penonton drama tanpa akhir.",
+              "highlight": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 29,
+      "start": 236.62,
+      "end": 243.144,
+      "on_screen_text": null,
+      "motion": "zoom_out",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "paper-flip-stage",
+        "camera": {
+          "from": [-0.3, 2.7, 5.6],
+          "to": [0.4, 2.0, 7.4],
+          "fov": 42,
+          "lookAt": [0, 0.1, 0]
+        },
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "data": {
+          "autoRotateSpeed": 0.07,
+          "cards": [
+            {
+              "label": "Penutup",
+              "title": "Governing a Moving Target with a Static Playbook",
+              "value": "SELAMAT MENGAWASI",
+              "subtitle": "Judi online bukan hanya soal teknologi — ini soal bagaimana kita mengatur target yang terus bergerak.",
+              "highlight": true
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

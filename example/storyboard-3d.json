@@ -1,0 +1,61 @@
+{
+  "title": "Contoh Explainer 3D WebGL",
+  "language": "id",
+  "video": { "width": 1920, "height": 1080, "fps": 30 },
+  "theme": {
+    "background": "#0F172A",
+    "accent": "#F59E0B",
+    "text": "#F8FAFC",
+    "fontHeading": "Poppins",
+    "fontBody": "Inter",
+    "cinematicOverlay": true
+  },
+  "audio": { "file": "audio/narration.mp3", "transcript": "audio/narration.srt" },
+  "scenes": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 8.5,
+      "visual": {
+        "type": "three",
+        "preset": "network-nodes",
+        "camera": { "from": [0, 1.4, 6.8], "to": [0.4, 0.7, 5.1], "fov": 42, "lookAt": [0, 0.1, 0] },
+        "data": {
+          "headline": "ARSITEKTUR 3D",
+          "nodes": [
+            { "id": "hub", "label": "REMOTION", "sublabel": "ENGINE", "size": 1.25, "highlight": true },
+            { "id": "n1", "label": "THREE.JS", "sublabel": "WEBGL", "size": 1.0, "highlight": false },
+            { "id": "n2", "label": "JSON", "sublabel": "SCHEMA", "size": 1.0, "highlight": false },
+            { "id": "n3", "label": "SRT", "sublabel": "TIMING", "size": 1.0, "highlight": false },
+            { "id": "n4", "label": "FFMPEG", "sublabel": "MP4", "size": 1.0, "highlight": true }
+          ],
+          "autoRotateSpeed": 0.16
+        }
+      },
+      "on_screen_text": "Pembuka 3D WebGL",
+      "motion": "zoom_in",
+      "transition": "fade"
+    },
+    {
+      "id": 2,
+      "start": 8.5,
+      "end": 20,
+      "visual": {
+        "type": "three",
+        "preset": "isometric-blocks",
+        "camera": { "from": [-1.8, 2.5, 6.2], "to": [1.4, 2.0, 5.2], "fov": 40, "lookAt": [0, -0.2, 0] },
+        "data": {
+          "blocks": [
+            { "label": "2D STATIS", "value": 30, "displayValue": "1.0x", "highlight": false },
+            { "label": "2.5D PARALLAX", "value": 65, "displayValue": "2.2x", "highlight": false },
+            { "label": "WEBGL 3D", "value": 100, "displayValue": "4.0x", "highlight": true }
+          ],
+          "autoRotateSpeed": 0.12
+        }
+      },
+      "on_screen_text": "Visualisasi Data Isometrik",
+      "motion": "pan_left",
+      "transition": "slide"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Contoh Explainer",
+  "language": "id",
+  "video": { "width": 1920, "height": 1080, "fps": 30 },
+  "theme": { "background": "#0F172A", "accent": "#F59E0B", "text": "#F8FAFC", "fontHeading": "Poppins", "fontBody": "Inter" },
+  "audio": { "file": "audio/narration.mp3", "transcript": "audio/narration.srt" },
+  "scenes": [
+    {
+      "id": 1, "start": 0, "end": 8.5,
+      "visual": { "type": "svg", "code": "<svg viewBox='0 0 1920 1080' xmlns='http://www.w3.org/2000/svg'><rect width='1920' height='1080' fill='var(--bg)'/><text x='960' y='540' text-anchor='middle' font-size='72' fill='var(--text)'>Scene 1</text></svg>" },
+      "on_screen_text": "Pembuka", "motion": "zoom_in", "transition": "fade"
+    },
+    {
+      "id": 2, "start": 8.5, "end": 20,
+      "visual": { "type": "html", "code": "<div style='height:100%;display:flex;align-items:center;justify-content:center;background:var(--bg);color:var(--text);font-size:72px'>Scene 2</div>" },
+      "on_screen_text": "Penjelasan", "motion": "pan_left", "transition": "slide"
+    }
+  ]
+}

@@ -1,0 +1,304 @@
+Kamu adalah Technical Video Director & 3D Motion Designer. Susun file `storyboard.json` yang **100% valid secara skema** untuk dirender oleh pipeline TypeScript + Remotion + Three.js (`storyV2`).
+
+### INPUT PROYEK
+- **Judul:** Kenapa Judi Online Sangat Sulit Diberantas di Indonesia
+- **Resolusi & FPS:** 1080x1920 @ 30fps (9:16 vertikal)
+- **Path Audio:** `audio/audio.mp3`
+- **Path Transkrip:** `audio/transcript.srt`
+- **Durasi Audio Eksak (detik):** 243.144
+- **Target Jumlah Scene:** 28–32 scene (rata-rata 7–9 detik per scene, memotong tepat pada batas pergantian cue SRT)
+- **Isi Transkrip SRT:**
+```srt
+1
+00:00:00,120 --> 00:00:04,960
+Kita semua tahu judi online itu ilegal dan
+pemerintah sudah bilang keras, tidak ada
+
+2
+00:00:04,960 --> 00:00:09,820
+ampun. Menteri sampai turun gunung,
+Komdigi kerja 24 jam, OJK memblokir
+
+3
+00:00:09,820 --> 00:00:13,940
+rekening, dan polisi menangkap bandar.
+Tetapi anehnya, situs judol tetap
+
+4
+00:00:13,940 --> 00:00:15,020
+berseliweran di HP kita.
+
+5
+00:00:15,780 --> 00:00:19,260
+Jangan salahkan batas negara dulu, karena
+di dalam negeri pun masalahnya sudah cukup
+
+6
+00:00:19,260 --> 00:00:19,620
+ramai.
+
+7
+00:00:20,340 --> 00:00:25,480
+Komdigi punya sistem AI bernama Rugos
+untuk merayapi situs judol. Dan sejak 2022
+
+8
+00:00:25,480 --> 00:00:31,100
+sampai Mei 2025, mereka sudah
+men-takedown lebih dari 58.000 situs go.id
+
+9
+00:00:31,100 --> 00:00:32,180
+yang disusupi konten judi.
+
+10
+00:00:32,900 --> 00:00:36,860
+Yang kalau dipikir-pikir, hebat juga
+karena pemerintah menutup satu pintu,
+
+11
+00:00:36,860 --> 00:00:40,680
+sementara judol membuka jendela, pintu
+belakang, garasi, dan terowongan bawah
+
+12
+00:00:40,680 --> 00:00:43,200
+tanah lewat mirror domain yang muncul
+dalam hitungan menit.
+
+13
+00:00:43,980 --> 00:00:49,440
+Komdigi juga memblokir lebih dari 1,6 juta
+konten judol sepanjang awal 2025, mulai
+
+14
+00:00:49,440 --> 00:00:54,980
+dari situs, tautan media sosial, sampai
+aplikasi. Tetapi dari 10.000 situs judol
+
+15
+00:00:54,980 --> 00:00:59,360
+yang ditangani, sekitar 76% memakai
+Cloudflare sebagai tameng untuk
+
+16
+00:00:59,360 --> 00:01:03,780
+menyamarkan IP dan mempercepat perpindahan
+domain, sehingga begitu diblokir, domain
+
+17
+00:01:03,780 --> 00:01:04,760
+barunya langsung nongol lagi.
+
+18
+00:01:05,480 --> 00:01:09,380
+Dan pemerintah sempat mengancam memblokir
+Cloudflare, tetapi Cloudflare juga
+
+19
+00:01:09,380 --> 00:01:13,480
+menopang banyak layanan publik dan
+komersial. Jadi ibaratnya kita memadamkan
+
+20
+00:01:13,480 --> 00:01:17,460
+kebakaran dengan menyemprotkan air ke
+seluruh kompleks, bukan ke titik apinya.
+
+21
+00:01:18,400 --> 00:01:23,560
+Lalu ada VPN. Karena ketika situs judol
+diblokir lewat DNS dan IP filtering oleh
+
+22
+00:01:23,560 --> 00:01:28,020
+ISP, pengguna cukup mengaktifkan VPN
+gratisan yang katanya disediakan oleh
+
+23
+00:01:28,020 --> 00:01:32,560
+mafia judol sendiri. Dan voila, situs yang
+diblokir kembali terbuka, seolah-olah
+
+24
+00:01:32,560 --> 00:01:36,960
+kita sedang berada di Singapura. Bahkan
+warnet di Kendal sampai dijadikan sarang
+
+25
+00:01:36,960 --> 00:01:41,500
+judol dengan VPN terpasang di jaringan
+lokalnya. Jadi, pemblokiran di tingkat ISP
+
+26
+00:01:41,500 --> 00:01:45,800
+hanya efektif untuk pengguna awam yang
+tidak tahu VPN. Sementara para pemain dan
+
+27
+00:01:45,800 --> 00:01:48,600
+bandar sudah siap dengan aplikasi APK
+khusus dan enkripsi.
+
+28
+00:01:49,220 --> 00:01:53,460
+Sekarang bagian paling lucu, yaitu
+pembayaran. Karena OJK sudah memblokir
+
+29
+00:01:53,460 --> 00:01:58,320
+lebih dari 30.000 rekening yang
+terindikasi judol sejak 2023 hingga akhir
+
+30
+00:01:58,320 --> 00:02:04,840
+2025. Dan PPATK menemukan sekitar 12 juta
+pemain judol di Indonesia. Tetapi bandar
+
+31
+00:02:04,840 --> 00:02:09,580
+tidak pernah kehabisan akal karena mereka
+beralih ke QRIS dan sekitar 70% deposit
+
+32
+00:02:09,580 --> 00:02:13,220
+judol sekarang menggunakan QRIS karena
+lebih praktis dan langsung terintegrasi
+
+33
+00:02:13,220 --> 00:02:13,960
+dengan sistem mereka.
+
+34
+00:02:14,720 --> 00:02:18,700
+ASPI bilang akan mencabut izin merchant
+yang menyalahgunakan QRIS, tetapi
+
+35
+00:02:18,700 --> 00:02:22,880
+merchant-nya bisa siapa saja. Warung kopi,
+toko kelontong, atau bahkan rekening
+
+36
+00:02:22,900 --> 00:02:27,240
+pinjaman online. Belum lagi mule account,
+yaitu rekening milik orang-orang yang
+
+37
+00:02:27,240 --> 00:02:32,160
+dijual seharga ratusan ribu hingga 1 juta
+rupiah untuk menampung dana judol. Jadi,
+
+38
+00:02:32,160 --> 00:02:36,380
+ketika OJK memblokir satu rekening, bandar
+tinggal beli rekening baru dari mahasiswa
+
+39
+00:02:36,380 --> 00:02:39,560
+atau ibu rumah tangga yang butuh uang dan
+efek jeranya nol.
+
+40
+00:02:40,260 --> 00:02:44,260
+Belum lagi dompet digital dan kripto.
+Karena OJK sendiri mengakui bahwa
+
+41
+00:02:44,260 --> 00:02:48,340
+e-wallet, virtual account, dan aset kripto
+membuat pelacakan transaksi semakin
+
+42
+00:02:48,340 --> 00:02:52,740
+sulit. Kripto dipakai di tahap layering
+untuk menyamarkan aliran dana ke exchanger
+
+43
+00:02:52,740 --> 00:02:53,200
+luar negeri.
+
+44
+00:02:53,820 --> 00:02:58,020
+Jadi, meskipun pemerintah sudah membangun
+sistem pemantauan, koordinasi antarlembaga
+
+45
+00:02:58,020 --> 00:03:03,360
+seperti Komdigi, OJK, PPATK, BI, dan
+penegak hukum masih belum sepenuhnya real
+
+46
+00:03:03,360 --> 00:03:07,340
+time. Dan ada jeda administratif yang
+membuat bandar sempat memindahkan dana
+
+47
+00:03:07,340 --> 00:03:08,480
+sebelum rekening diblokir.
+
+48
+00:03:09,120 --> 00:03:12,900
+Jadi kalau diringkas, pemerintah sudah
+punya AI, sudah memblokir jutaan konten,
+
+49
+00:03:12,900 --> 00:03:16,580
+sudah menutup puluhan ribu rekening.
+Tetapi judol tetap hidup karena
+
+50
+00:03:16,580 --> 00:03:20,480
+ekosistemnya terfragmentasi dan bergerak
+lebih cepat daripada birokrasi. Setiap
+
+51
+00:03:20,480 --> 00:03:23,780
+kali satu simpul diputus, simpul baru
+tumbuh dan kita sedang bermain
+
+52
+00:03:23,780 --> 00:03:27,620
+whack-a-mole dengan mole yang sudah
+belajar pakai VPN, QRIS, dan kripto.
+
+53
+00:03:27,620 --> 00:03:30,140
+Apakah ini berarti menyerah? Tentu tidak.
+
+54
+00:03:30,740 --> 00:03:35,280
+Tetapi selama solusinya masih sebatas
+pemblokiran situs dan rekening, tanpa
+
+55
+00:03:35,280 --> 00:03:40,100
+menutup celah teknis di hulu, seperti
+pengawasan Cloudflare yang proporsional,
+
+56
+00:03:40,100 --> 00:03:45,380
+verifikasi merchant QRIS yang ketat, dan
+literasi digital yang masif, maka perang
+
+57
+00:03:45,380 --> 00:03:50,480
+ini akan terus berlanjut. Dan kita sebagai
+penonton hanya bisa menyaksikan drama ini
+
+58
+00:03:50,480 --> 00:03:55,500
+dengan tawa getir. Karena judi online
+bukan hanya soal teknologi. Ini soal
+
+59
+00:03:56,120 --> 00:04:00,840
+how we govern a moving target with a
+static playbook. Selamat bermain!
+
+60
+00:04:00,840 --> 00:04:02,820
+Maksudnya, selamat mengawasi.
+```
+
+### ATURAN TEKNIS WAJIB (
