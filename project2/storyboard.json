@@ -1,0 +1,866 @@
+{
+  "title": "Sejarah Perang Troya",
+  "aspect_ratio": "9:16",
+  "resolution": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "audio": {
+    "path": "audio/audio.mp3",
+    "srt_path": "audio/transcript.srt",
+    "duration": 134.4
+  },
+  "style_bible": {
+    "art_style": "2d-stickman-historical",
+    "base_positive_style": "Clean minimalist 2D stickman vector illustration, bold uniform ink outlines, round blank stickman heads without complex facial features, expressive body language, historical Bronze Age props, flat editorial coloring, 9:16 vertical composition, centered safe zone",
+    "base_negative_style": "3d render, photorealistic, realistic human anatomy, detailed face, eyes and mouth, anime, watermark, text, letters, numbers, signature, blurry, messy lines",
+    "palette": {
+      "background_light": "#F4EFE6",
+      "background_dark": "#18181B",
+      "primary_ink": "#111827",
+      "accent_greek": "#DC2626",
+      "accent_troy": "#D97706"
+    }
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 7.8,
+      "on_screen_text": "10 TAHUN PENGEPUNGAN",
+      "narration_summary": "Sepuluh tahun dikepung, puluhan ribu prajurit tewas, tapi tembok Troya tak pernah tembus.",
+      "visual": {
+        "type": "2d-stickman",
+        "asset_filename": "scenes/scene_01.png",
+        "background": "#F4EFE6",
+        "composition": "wide-battle",
+        "characters": [
+          {
+            "role": "Pasukan Yunani",
+            "accessory": "helm & tombak aksen #DC2626",
+            "pose": "menyerbu ke kanan"
+          },
+          {
+            "role": "Pemanah Troya",
+            "accessory": "perisai aksen #D97706",
+            "pose": "menembakkan panah dari atas tembok"
+          }
+        ],
+        "props_and_environment": "Tembok batu raksasa Troya di sisi kanan dengan panah berterbangan",
+        "image_prompt": "Clean minimalist 2D stickman vector illustration on warm parchment background #F4EFE6, bold black ink outlines, tiny black stickman soldiers wearing crimson red #DC2626 crested helmets charging with spears toward a massive towering stone fortress wall on the right, gold-shielded #D97706 stickman archers defending from the battlements, arrows flying in mid-air, expressive stickman poses, flat editorial coloring, 9:16 vertical framing with empty top and bottom margins, no text",
+        "negative_prompt": "3d render, photorealistic, realistic human anatomy, detailed face, eyes and mouth, anime, watermark, text, typography, letters, numbers, blurry"
+      },
+      "camera_2d": {
+        "zoom": {
+          "from": 1.0,
+          "to": 1.12
+        },
+        "pan_x": {
+          "from": 0,
+          "to": -50
+        },
+        "pan_y": {
+          "from": 0,
+          "to": 0
+        },
+        "transition_in": "cut"
+      }
+    },
+    {
+      "id": 2,
+      "start": 7.8,
+      "end": 17.1,
+      "on_screen_text": "SATU KEBOHONGAN BESAR",
+      "narration_summary": "Perang paling terkenal dalam sejarah ini berakhir lewat satu kebohongan besar.",
+      "visual": {
+        "type": "2d-stickman",
+        "asset_filename": "scenes/scene_02.png",
+        "background": "#18181B",
+        "composition": "silhouette-dramatic",
+        "characters": [
+          {
+            "role": "Sosok Dalang Strategi",
+            "accessory": "jubah aksen #DC2626",
+            "pose": "berdiri di depan siluet kuda kayu besar"
+          }
+        ],
+        "props_and_environment": "Siluet patung kuda kayu raksasa di tengah kabut malam",
+        "image_prompt": "Clean minimalist 2D stickman vector illustration on dark charcoal background #18181B, bold white ink outlines #F9FAFB, a lone stickman strategist in a crimson red #DC2626 cloak standing before the towering mysterious silhouette of a giant wooden horse with warm amber rim light #D97706, dramatic minimalist historical storytelling, 9:16 vertical framing with empty top and bottom margins, no text",
+        "negative_prompt": "3d render, photorealistic, realistic human anatomy, detailed face, eyes and mouth, anime, watermark, text, typography, letters, numbers, blurry"
+      },
+      "camera_2d": {
+        "zoom": {
+          "from": 1.1,
+          "to": 1.0
+        },
+        "pan_x": {
+          "from": 0,
+          "to": 0
+        },
+        "pan_y": {
+          "from": 30,
+          "to": -20
+        },
+        "transition_in": "fade"
+      }
+    },
+    {
+      "id": 3,
+      "start": 17.1,
+      "end": 21.3,
+      "on_screen_text": "ABAD KE-12 SM",
+      "narration_summary": "Kisahnya berlatar sekitar abad ke-12 Sebelum Masehi di Mediterania Timur.",
+      "visual": {
+        "type": "2d-stickman",
+        "asset_filename": "scenes/scene_03.png",
+        "background": "#F4EFE6",
+        "composition": "map-tactical",
+        "characters": [
+          {
+            "role": "Prajurit Yunani & Troya",
+            "accessory": "panji #DC2626 di barat dan #D97706 di timur",
+            "pose": "berdiri berhadapan di atas peta Laut Aegea"
+          }
+        ],
+        "props_and_environment": "Peta minimalis Laut Aegea memisahkan daratan Yunani dan kota Troya",
+        "image_prompt": "Clean minimalist 2D stickman vector illustration on warm parchment paper #F4EFE6, bold black ink outlines, simplified antique map of the Aegean Sea separating Greece on the left with a crimson red #DC2626 banner and Troy on the right with a golden #D97706 fortress icon, two tiny stickman warriors facing each other across the sea, flat editorial style, 9:16 vertical framing with empty top and bottom margins, no text",
+        "negative_prompt": "3d render, photorealistic, realistic human anatomy, detailed face, labels, map text, letters, numbers, watermark, blurry"
+      },
+      "camera_2d": {
+        "zoom": {
+          "from": 1.0,
+          "to": 1.1
+        },
+        "pan_x": {
+          "from": -25,
+          "to": 25
+        },
+        "pan_y": {
+          "from": 0,
+          "to": 0
+        },
+        "transition_in": "slide-left"
+      }
+    },
+    {
+      "id": 4,
+      "start": 21.3,
+      "end": 27.3,
+      "on_screen_text": "PELARIAN HELEN",
+      "narration_summary": "Pangeran Paris dari Troya membawa kabur Helen, istri Raja Menelaus dari Sparta.",
+      "visual": {
+        "type": "2d-stickman",
+        "asset_filename": "scenes/scene_04.png",
+        "background": "#F4EFE6",
+        "composition": "character-focus",
+        "characters": [
+          {
+            "role": "Pangeran Paris",
+            "accessory": "jubah & mahkota emas #D97706",
+            "pose": "menggandeng tangan Helen berlari menuju kapal"
+          },
+          {
+            "role": "Helen",
+            "accessory": "selendang putih & aksen emas #D97706",
+            "pose": "berlari mengikuti Paris"
+          },
+          {
+            "role": "Raja Menelaus",
+            "accessory": "mahkota & jubah merah #DC2626",
+            "pose": "mengepalkan tangan marah di kejauhan"
+          }
+        ],
+        "props_and_environment": "Dermaga Sparta dengan kapal Troya berlayar",
+        "image_prompt": "Clean minimalist 2D stickman vector illustration on warm parchment background #F4EFE6, bold black ink outlines, stickman Prince Paris wearing a golden cloak #D97706 holding the hand of stickman Helen running onto a wooden ship, while an angry stickman King Menelaus in a crimson red #DC2626 cape shakes his fist on the pier behind them, expressive body language, 9:16 vertical framing with empty top and bottom margins, no text",
+        "negative_prompt": "3d render, photorealistic, realistic human anatomy, detailed face, eyes and mouth, anime, watermark, text, letters, numbers, blurry"
+      },
+      "camera_2d": {
+        "zoom": {
+          "from": 1.02,
+          "to": 1.12
+        },
+        "pan_x": {
+          "from": 30,
+          "to": -30
+        },
+        "pan_y": {
+          "from": 0,
+          "to": 0
+        },
+        "transition_in": "whip-pan"
+      }
+    },
+    {
+      "id": 5,
+      "start": 27.3,
+      "end": 33.1,
+      "on_screen_text": "PENGHINAAN POLITIK",
+      "narration_summary": "Bagi bangsa Yunani, ini bukan sekadar urusan asmara, tapi penghinaan politik.",
+      "visual": {
+        "type": "2d-stickman",
+        "asset_filename": "scenes/scene_05.png",
+        "background": "#F4EFE6",
+        "composition": "character-focus",
+        "characters": [
+          {
+            "role": "Raja Agamemnon",
+            "accessory": "mahkota & jubah merah tua #DC2626",
+            "pose": "mengangkat pedang tinggi di hadapan para raja Yunani"
+          },
+          {
+            "role": "Dewan Raja Yunani",
+            "accessory": "perisai & helm aksen #DC2626",
+            "pose": "mengangkat tombak bersumpah perang"
+          }
+        ],
+        "props_and_environment": "Pilar batu istana Mikenai minimalis",
+        "image_prompt": "Clean minimalist 2D stickman vector illustration on warm parchment background #F4EFE6, bold black ink outlines, stickman King Agamemnon wearing a crimson red #DC2626 royal cloak and crown raising a bronze sword high in a Greek council hall, surrounded by allied stickman kings raising spears in anger, minimalist stone pillars, expressive poses, 9:16 vertical framing with empty top and bottom margins, no text",
+        "negative_prompt": "3d render, photorealistic, realistic human anatomy, detailed face, eyes and mouth, anime, watermark, text, letters, numbers, blurry"
+      },
+      "camera_2d": {
+        "zoom": {
+          "from": 1.0,
+          "to": 1.14
+        },
+        "pan_x": {
+          "from": 0,
+          "to": 0
+        },
+        "pan_y": {
+          "from": 20,
+          "to": -25
+        },
+        "transition_in": "cut"
+      }
+    },
+    {
+      "id": 6,
+      "start": 33.1,
+      "end": 42.2,
+      "on_screen_text": "1.000 KAPAL PERANG",
+      "narration_summary": "Raja Agamemnon menghimpun lebih dari 1.000 kapal perang menyeberangi Laut Aegea mengepung Troya.",
+      "visual": {
+        "type": "2d-stickman",
+        "asset_filename": "scenes/scene_06.png",
+        "background": "#F4EFE6",
+        "composition": "wide-battle",
+        "characters": [
+          {
+            "role": "Armada Yunani",
+            "accessory": "layar kapal & helm merah #DC2626",
+            "pose": "berdiri di haluan puluhan kapal dayung"
+          }
+        ],
+        "props_and_environment": "Armada besar kapal trireme kuno berlayar di ombak Laut Aegea menuju pesisir Troya",
+        "image_prompt": "Clean minimalist 2D stickman vector illustration on warm parchment background #F4EFE6, bold black ink outlines, massive armada of ancient Greek wooden galleys with crimson red #DC2626 square sails crossing stylized ink waves of the Aegean Sea, tiny stickman soldiers standing with spears on ship decks heading toward the distant shore of Troy, 9:16 vertical framing with empty top and bottom margins, no text",
+        "negative_prompt": "3d render, photorealistic, realistic human anatomy, detailed face, anime, watermark, text, letters, numbers, blurry"
+      },
+      "camera_2d": {
+        "zoom": {
+          "from": 1.0,
+          "to": 1.1
+        },
+        "pan_x": {
+          "from": -55,
+          "to": 35
+        },
+        "pan_y": {
+          "from": 0,
+          "to": 0
+        },
+        "transition_in": "slide-left"
+      }
+    },
+    {
+      "id": 7,
+      "start": 42.2,
+      "end": 47.9,
+      "on_screen_text": "TEMBOK TAK TERTEMBUS",
+      "narration_summary": "Troya dilindungi tembok batu raksasa yang nyaris mustahil ditembus.",
+      "visual": {
+        "type": "2d-stickman",
+        "asset_filename": "scenes/scene_07.png",
+        "background": "#F4EFE6",
+        "composition": "character-focus",
+        "characters": [
+          {
+            "role": "Prajurit Yunani",
+            "accessory": "helm merah #DC2626",
+            "pose": "mendongak kecil di kaki tembok tinggi"
+          },
+          {
+            "role": "Penjaga Troya",
+            "accessory": "perisai emas #D97706",
+            "pose": "berdiri berbaris di puncak tembok"
+          }
+        ],
+        "props_and_environment": "Tembok batu Troya menjulang vertikal sangat tinggi dengan gerbang perunggu tertutup rapat",
+        "image_prompt": "Clean minimalist 2D stickman vector illustration on warm parchment background #F4EFE6, bold black ink outlines, imposing towering stone wall of Troy stretching vertically with closed bronze gates, tiny crimson-helmeted #DC2626 Greek stickman soldiers looking up from the base while gold-shielded #D97706 Trojan stickman guards stand atop the high parapet, dramatic scale contrast, 9:16 vertical framing with empty top and bottom margins, no text",
+        "negative_prompt": "3d render, photorealistic, realistic human anatomy, detailed face, anime, watermark, text, letters, numbers, blurry"
+      },
+      "camera_2d": {
+        "zoom": {
+          "from": 1.05,
+          "to": 1.05
+        },
+        "pan_x": {
+          "from": 0,
+          "to": 0
+        },
+        "pan_y": {
+          "from": 60,
+          "to": -60
+        },
+        "transition_in": "cut"
+      }
+    },
+    {
+      "id": 8,
+      "start": 47.9,
+      "end": 52.9,
+      "on_screen_text": "PERANG ATRISI 10 TAHUN",
+      "narration_summary": "Selama 10 tahun kedua kubu terjebak perang atrisi tanpa pemenang.",
+      "visual": {
+        "type": "2d-stickman",
+        "asset_filename": "scenes/scene_08.png",
+        "background": "#F4EFE6",
+        "composition": "split-screen",
+        "characters": [
+          {
+            "role": "Barisan Tombak Yunani",
+            "accessory": "perisai & jambul merah #DC2626",
+            "pose": "saling dorong perisai dalam formasi phalanx"
+          },
+          {
+            "role": "Barisan Tombak Troya",
+            "accessory": "perisai & jambul emas #D97706",
+            "pose": "menahan dorongan di sisi berlawanan"
+          }
+        ],
+        "props_and_environment": "Tombak patah dan perisai retak berserakan di tanah medan perang",
+        "image_prompt": "Clean minimalist 2D stickman vector illustration on warm parchment background #F4EFE6, bold black ink outlines, stalemate battle between crimson-crested #DC2626 Greek stickman phalanx on the left and gold-shielded #D97706 Trojan stickman warriors on the right clashing shields and spears in the center, broken spears on the ground, flat editorial illustration, 9:16 vertical framing with empty top and bottom margins, no text",
+        "negative_prompt": "3d render, photorealistic, realistic human anatomy, detailed face, anime, watermark, text, letters, numbers, blurry"
+      },
+      "camera_2d": {
+        "zoom": {
+          "from": 1.12,
+          "to": 1.0
+        },
+        "pan_x": {
+          "from": 0,
+          "to": 0
+        },
+        "pan_y": {
+          "from": 0,
+          "to": 0
+        },
+        "transition_in": "cut"
+      }
+    },
+    {
+      "id": 9,
+      "start": 52.9,
+      "end": 58.4,
+      "on_screen_text": "ACHILLES",
+      "narration_summary": "Yunani mengandalkan Achilles, prajurit terhebat mereka yang hampir tak terkalahkan.",
+      "visual": {
+        "type": "2d-stickman",
+        "asset_filename": "scenes/scene_09.png",
+        "background": "#F4EFE6",
+        "composition": "character-focus",
+        "characters": [
+          {
+            "role": "Achilles",
+            "accessory": "helm Korintus jambul merah menyala #DC2626 & perisai bundar",
+            "pose": "sikap tempur dinamis memegang tombak dan pedang"
+          }
+        ],
+        "props_and_environment": "Garis kecepatan tinta minimalis di belakang Achilles",
+        "image_prompt": "Clean minimalist 2D stickman vector illustration on warm parchment background #F4EFE6, bold black ink outlines, heroic stickman warrior Achilles wearing a prominent crimson red #DC2626 Corinthian helmet crest and red cape in an agile combat stance holding a spear and round shield, subtle dynamic ink motion lines, minimalist historical style, 9:16 vertical framing with empty top and bottom margins, no text",
+        "negative_prompt": "3d render, photorealistic, realistic human anatomy, detailed face, eyes and mouth, anime, watermark, text, letters, numbers, blurry"
+      },
+      "camera_2d": {
+        "zoom": {
+          "from": 1.0,
+          "to": 1.14
+        },
+        "pan_x": {
+          "from": -30,
+          "to": 20
+        },
+        "pan_y": {
+          "from": 0,
+          "to": 0
+        },
+        "transition_in": "whip-pan"
+      }
+    },
+    {
+      "id": 10,
+      "start": 58.4,
+      "end": 63.4,
+      "on_screen_text": "PANGERAN HECTOR",
+      "narration_summary": "Troya bertumpu pada Pangeran Hector sebagai benteng pertahanan terakhir.",
+      "visual": {
+        "type": "2d-stickman",
+        "asset_filename": "scenes/scene_10.png",
+        "background": "#F4EFE6",
+        "composition": "character-focus",
+        "characters": [
+          {
+            "role": "Pangeran Hector",
+            "accessory": "helm berjambul emas #D97706 & perisai perunggu besar",
+            "pose": "berdiri tegap melindungi gerbang Troya"
+          }
+        ],
+        "props_and_environment": "Gerbang utama kota Troya di latar belakang",
+        "image_prompt": "Clean minimalist 2D stickman vector illustration on warm parchment background #F4EFE6, bold black ink outlines, noble stickman Prince Hector wearing a golden-amber #D97706 crested helmet and heavy bronze shield standing firmly in a defensive stance in front of the gates of Troy, expressive resolute posture, 9:16 vertical framing with empty top and bottom margins, no text",
+        "negative_prompt": "3d render, photorealistic, realistic human anatomy, detailed face, eyes and mouth, anime, watermark, text, letters, numbers, blurry"
+      },
+      "camera_2d": {
+        "zoom": {
+          "from": 1.0,
+          "to": 1.14
+        },
+        "pan_x": {
+          "from": 30,
+          "to": -20
+        },
+        "pan_y": {
+          "from": 0,
+          "to": 0
+        },
+        "transition_in": "whip-pan"
+      }
+    },
+    {
+      "id": 11,
+      "start": 63.4,
+      "end": 68.4,
+      "on_screen_text": "DUEL PENENTU",
+      "narration_summary": "Keduanya berduel satu lawan satu dan Hector tewas di tangan Achilles.",
+      "visual": {
+        "type": "2d-stickman",
+        "asset_filename": "scenes/scene_11.png",
+        "background": "#F4EFE6",
+        "composition": "character-focus",
+        "characters": [
+          {
+            "role": "Achilles",
+            "accessory": "jambul merah #DC2626",
+            "pose": "menusukkan tombak ke depan"
+          },
+          {
+            "role": "Hector",
+            "accessory": "jambul emas #D97706",
+            "pose": "terjatuh berlutut dengan perisai terlepas"
+          }
+        ],
+        "props_and_environment": "Debu pertarungan di depan tembok Troya",
+        "image_prompt": "Clean minimalist 2D stickman vector illustration on warm parchment background #F4EFE6, bold black ink outlines, dramatic one-on-one duel between crimson-crested #DC2626 stickman Achilles thrusting his spear forward and golden-crested #D97706 stickman Hector falling to one knee with his bronze shield dropped on the ground, minimalist dust puffs, 9:16 vertical framing with empty top and bottom margins, no text",
+        "negative_prompt": "3d render, photorealistic, realistic human anatomy, gore, blood splatter, detailed face, anime, watermark, text, letters, numbers, blurry"
+      },
+      "camera_2d": {
+        "zoom": {
+          "from": 1.04,
+          "to": 1.16
+        },
+        "pan_x": {
+          "from": 0,
+          "to": 0
+        },
+        "pan_y": {
+          "from": 0,
+          "to": -15
+        },
+        "transition_in": "cut"
+      }
+    },
+    {
+      "id": 12,
+      "start": 68.4,
+      "end": 73.8,
+      "on_screen_text": "GERBANG TETAP TERKUNCI",
+      "narration_summary": "Bahkan setelah komandan terbaiknya gugur, gerbang Troya tetap terkunci rapat.",
+      "visual": {
+        "type": "2d-stickman",
+        "asset_filename": "scenes/scene_12.png",
+        "background": "#F4EFE6",
+        "composition": "character-focus",
+        "characters": [
+          {
+            "role": "Prajurit Yunani",
+            "accessory": "helm merah #DC2626",
+            "pose": "berdiri frustrasi di depan gerbang terkunci"
+          }
+        ],
+        "props_and_environment": "Gerbang kayu berlapis perunggu raksasa dengan palang kunci besi tebal",
+        "image_prompt": "Clean minimalist 2D stickman vector illustration on warm parchment background #F4EFE6, bold black ink outlines, massive closed wooden and bronze gates of Troy reinforced with heavy stone walls, small crimson-helmeted #DC2626 Greek stickman warriors standing helplessly outside with lowered spears, 9:16 vertical framing with empty top and bottom margins, no text",
+        "negative_prompt": "3d render, photorealistic, realistic human anatomy, detailed face, anime, watermark, text, letters, numbers, blurry"
+      },
+      "camera_2d": {
+        "zoom": {
+          "from": 1.12,
+          "to": 1.0
+        },
+        "pan_x": {
+          "from": 0,
+          "to": 0
+        },
+        "pan_y": {
+          "from": -20,
+          "to": 20
+        },
+        "transition_in": "cut"
+      }
+    },
+    {
+      "id": 13,
+      "start": 73.8,
+      "end": 80.7,
+      "on_screen_text": "TAKTIK ODYSSEUS",
+      "narration_summary": "Sadar serangan frontal sia-sia, Panglima Odysseus merancang taktik psikologis.",
+      "visual": {
+        "type": "2d-stickman",
+        "asset_filename": "scenes/scene_13.png",
+        "background": "#F4EFE6",
+        "composition": "character-focus",
+        "characters": [
+          {
+            "role": "Odysseus",
+            "accessory": "jubah merah #DC2626 & ikat kepala panglima",
+            "pose": "memegang dagu berpikir di samping sketsa kuda kayu"
+          }
+        ],
+        "props_and_environment": "Gulungan perkamen berisi sketsa garis kasar Kuda Troya di atas meja kayu",
+        "image_prompt": "Clean minimalist 2D stickman vector illustration on warm parchment background #F4EFE6, bold black ink outlines, clever stickman commander Odysseus in a crimson red #DC2626 tunic rubbing his chin in thought beside a wooden table displaying a simple blueprint sketch of a hollow wooden horse, expressive scheming posture, 9:16 vertical framing with empty top and bottom margins, no text",
+        "negative_prompt": "3d render, photorealistic, realistic human anatomy, detailed face, readable text on scroll, letters, numbers, watermark, blurry"
+      },
+      "camera_2d": {
+        "zoom": {
+          "from": 1.0,
+          "to": 1.12
+        },
+        "pan_x": {
+          "from": -25,
+          "to": 25
+        },
+        "pan_y": {
+          "from": 0,
+          "to": 0
+        },
+        "transition_in": "fade"
+      }
+    },
+    {
+      "id": 14,
+      "start": 80.7,
+      "end": 86.1,
+      "on_screen_text": "PURA-PURA MUNDUR",
+      "narration_summary": "Pasukan Yunani membakar kamp mereka, pura-pura menyerah dan berlayar pergi.",
+      "visual": {
+        "type": "2d-stickman",
+        "asset_filename": "scenes/scene_14.png",
+        "background": "#F4EFE6",
+        "composition": "wide-battle",
+        "characters": [
+          {
+            "role": "Pasukan Yunani",
+            "accessory": "layar merah #DC2626",
+            "pose": "mendayung kapal menjauhi pantai"
+          }
+        ],
+        "props_and_environment": "Tenda kamp Yunani terbakar berasap di pantai sementara kapal berlayar menjauh ke cakrawala",
+        "image_prompt": "Clean minimalist 2D stickman vector illustration on warm parchment background #F4EFE6, bold black ink outlines, empty burning wooden Greek camp tents with stylized smoke plumes on the beach while Greek galleys with crimson red #DC2626 sails row away toward the horizon, minimalist historical scene, 9:16 vertical framing with empty top and bottom margins, no text",
+        "negative_prompt": "3d render, photorealistic, realistic human anatomy, detailed face, anime, watermark, text, letters, numbers, blurry"
+      },
+      "camera_2d": {
+        "zoom": {
+          "from": 1.0,
+          "to": 1.1
+        },
+        "pan_x": {
+          "from": 40,
+          "to": -40
+        },
+        "pan_y": {
+          "from": 0,
+          "to": 0
+        },
+        "transition_in": "slide-left"
+      }
+    },
+    {
+      "id": 15,
+      "start": 86.1,
+      "end": 93.6,
+      "on_screen_text": "KUDA TROYA",
+      "narration_summary": "Di depan gerbang kota, mereka meninggalkan patung kuda kayu raksasa sebagai persembahan palsu.",
+      "visual": {
+        "type": "2d-stickman",
+        "asset_filename": "scenes/scene_15.png",
+        "background": "#F4EFE6",
+        "composition": "character-focus",
+        "characters": [
+          {
+            "role": "Pengintai Troya",
+            "accessory": "perisai & jubah emas #D97706",
+            "pose": "mengintip heran dari balik gerbang kota"
+          }
+        ],
+        "props_and_environment": "Patung Kuda Kayu raksasa beroda berdiri megah sendirian di depan gerbang Troya",
+        "image_prompt": "Clean minimalist 2D stickman vector illustration on warm parchment background #F4EFE6, bold black ink outlines, a colossal wooden horse statue mounted on wheeled planks standing alone outside the stone gates of Troy, tiny gold-clad #D97706 Trojan stickman guards peeking out in curiosity from the city wall, 9:16 vertical framing with empty top and bottom margins, no text",
+        "negative_prompt": "3d render, photorealistic, realistic human anatomy, detailed face, anime, watermark, text, letters, numbers, blurry"
+      },
+      "camera_2d": {
+        "zoom": {
+          "from": 1.0,
+          "to": 1.14
+        },
+        "pan_x": {
+          "from": 0,
+          "to": 0
+        },
+        "pan_y": {
+          "from": 25,
+          "to": -20
+        },
+        "transition_in": "cut"
+      }
+    },
+    {
+      "id": 16,
+      "start": 93.6,
+      "end": 99.2,
+      "on_screen_text": "PESTA KEMENANGAN",
+      "narration_summary": "Warga Troya yang mengira perang usai menarik kuda itu masuk dan berpesta semalaman.",
+      "visual": {
+        "type": "2d-stickman",
+        "asset_filename": "scenes/scene_16.png",
+        "background": "#F4EFE6",
+        "composition": "wide-battle",
+        "characters": [
+          {
+            "role": "Warga & Prajurit Troya",
+            "accessory": "aksen pakaian emas #D97706",
+            "pose": "menarik tali kuda kayu masuk gerbang dan mengangkat piala berpesta"
+          }
+        ],
+        "props_and_environment": "Gerbang Troya terbuka lebar, Kuda Kayu berada di alun-alun dalam kota",
+        "image_prompt": "Clean minimalist 2D stickman vector illustration on warm parchment background #F4EFE6, bold black ink outlines, joyful gold-accented #D97706 Trojan stickman citizens pulling the giant wheeled wooden horse through the open city gates and raising goblets in celebration inside Troy, expressive cheering poses, 9:16 vertical framing with empty top and bottom margins, no text",
+        "negative_prompt": "3d render, photorealistic, realistic human anatomy, detailed face, anime, watermark, text, letters, numbers, blurry"
+      },
+      "camera_2d": {
+        "zoom": {
+          "from": 1.02,
+          "to": 1.12
+        },
+        "pan_x": {
+          "from": -35,
+          "to": 35
+        },
+        "pan_y": {
+          "from": 0,
+          "to": 0
+        },
+        "transition_in": "whip-pan"
+      }
+    },
+    {
+      "id": 17,
+      "start": 99.2,
+      "end": 107.0,
+      "on_screen_text": "SERANGAN TENGAH MALAM",
+      "narration_summary": "Tengah malam, prajurit elit Yunani keluar dari perut kuda dan membuka gerbang utama.",
+      "visual": {
+        "type": "2d-stickman",
+        "asset_filename": "scenes/scene_17.png",
+        "background": "#18181B",
+        "composition": "silhouette-dramatic",
+        "characters": [
+          {
+            "role": "Pasukan Elit Yunani",
+            "accessory": "helm merah #DC2626",
+            "pose": "turun lewat tali dari pintu rahasia perut kuda kayu"
+          },
+          {
+            "role": "Penjaga Troya",
+            "accessory": "perisai emas #D97706",
+            "pose": "tertidur bersandar di dekat gerbang"
+          }
+        ],
+        "props_and_environment": "Kuda Troya di tengah kota gelap dengan bulan sabit, palka rahasia terbuka",
+        "image_prompt": "Clean minimalist 2D stickman vector illustration on dark night background #18181B, bold white ink outlines #F9FAFB, elite Greek stickman soldiers with crimson red #DC2626 helmets silently climbing down a rope from a hidden trapdoor under the belly of the giant wooden horse at midnight while gold-accented #D97706 Trojan guards sleep nearby, crescent moon in sky, 9:16 vertical framing with empty top and bottom margins, no text",
+        "negative_prompt": "3d render, photorealistic, realistic human anatomy, detailed face, anime, watermark, text, letters, numbers, blurry"
+      },
+      "camera_2d": {
+        "zoom": {
+          "from": 1.0,
+          "to": 1.15
+        },
+        "pan_x": {
+          "from": 0,
+          "to": 0
+        },
+        "pan_y": {
+          "from": -20,
+          "to": 25
+        },
+        "transition_in": "fade"
+      }
+    },
+    {
+      "id": 18,
+      "start": 107.0,
+      "end": 111.5,
+      "on_screen_text": "TROYA TERBAKAR",
+      "narration_summary": "Dalam hitungan jam, Troya dibakar rata dengan tanah.",
+      "visual": {
+        "type": "2d-stickman",
+        "asset_filename": "scenes/scene_18.png",
+        "background": "#18181B",
+        "composition": "wide-battle",
+        "characters": [
+          {
+            "role": "Pasukan Yunani",
+            "accessory": "tombak & jambul merah #DC2626",
+            "pose": "menyerbu masuk melewati gerbang yang terbuka"
+          }
+        ],
+        "props_and_environment": "Tembok dan menara kota Troya dilalap kobaran api oranye-emas #D97706",
+        "image_prompt": "Clean minimalist 2D stickman vector illustration on dark night background #18181B, bold white ink outlines #F9FAFB, the city walls and towers of Troy engulfed in stylized amber-orange #D97706 flames and smoke while crimson-crested #DC2626 Greek stickman armies pour through the wide-open main gates, dramatic minimalist historical scene, 9:16 vertical framing with empty top and bottom margins, no text",
+        "negative_prompt": "3d render, photorealistic, realistic human anatomy, gore, detailed face, anime, watermark, text, letters, numbers, blurry"
+      },
+      "camera_2d": {
+        "zoom": {
+          "from": 1.0,
+          "to": 1.14
+        },
+        "pan_x": {
+          "from": -30,
+          "to": 30
+        },
+        "pan_y": {
+          "from": 0,
+          "to": 0
+        },
+        "transition_in": "cut"
+      }
+    },
+    {
+      "id": 19,
+      "start": 111.5,
+      "end": 116.4,
+      "on_screen_text": "EPIK ILIAD HOMEROS",
+      "narration_summary": "Selama berabad-abad, kisah dalam epik Iliad karya Homeros ini dianggap cuma dongeng.",
+      "visual": {
+        "type": "2d-stickman",
+        "asset_filename": "scenes/scene_19.png",
+        "background": "#F4EFE6",
+        "composition": "character-focus",
+        "characters": [
+          {
+            "role": "Penyair Homeros",
+            "accessory": "jubah putih & kecapi emas #D97706",
+            "pose": "duduk membacakan gulungan epik Iliad"
+          }
+        ],
+        "props_and_environment": "Gulungan naskah kuno dengan ikon bayangan Kuda Troya dan helm Yunani di atasnya",
+        "image_prompt": "Clean minimalist 2D stickman vector illustration on warm parchment background #F4EFE6, bold black ink outlines, seated ancient Greek poet stickman Homer holding a golden #D97706 lyre and unrolling a scroll while faint minimalist icons of a wooden horse and crimson #DC2626 helmet float above like a legend, 9:16 vertical framing with empty top and bottom margins, no text",
+        "negative_prompt": "3d render, photorealistic, realistic human anatomy, detailed face, readable letters, numbers, watermark, blurry"
+      },
+      "camera_2d": {
+        "zoom": {
+          "from": 1.08,
+          "to": 1.0
+        },
+        "pan_x": {
+          "from": 0,
+          "to": 0
+        },
+        "pan_y": {
+          "from": 0,
+          "to": 0
+        },
+        "transition_in": "fade"
+      }
+    },
+    {
+      "id": 20,
+      "start": 116.4,
+      "end": 126.5,
+      "on_screen_text": "BUKTI HISARLIK, TURKI",
+      "narration_summary": "Penggalian arkeologis di Hisarlik, Turki, menemukan reruntuhan kota benteng asli dengan jejak kebakaran Zaman Perunggu.",
+      "visual": {
+        "type": "2d-stickman",
+        "asset_filename": "scenes/scene_20.png",
+        "background": "#F4EFE6",
+        "composition": "character-focus",
+        "characters": [
+          {
+            "role": "Arkeolog",
+            "accessory": "topi lapangan & sekop aksen #D97706",
+            "pose": "menggali lapisan tanah dan menunjuk reruntuhan tembok"
+          }
+        ],
+        "props_and_environment": "Lapisan stratigrafi tanah galian memperlihatkan fondasi tembok batu kuno dan lapisan abu hitam",
+        "image_prompt": "Clean minimalist 2D stickman vector illustration on warm parchment background #F4EFE6, bold black ink outlines, stickman archaeologist holding a shovel and magnifying glass excavating layered earth trenches to uncover ancient stone fortress ruins and charred Bronze Age ash layers accented in #D97706, clean editorial style, 9:16 vertical framing with empty top and bottom margins, no text",
+        "negative_prompt": "3d render, photorealistic, realistic human anatomy, detailed face, anime, watermark, text, letters, numbers, blurry"
+      },
+      "camera_2d": {
+        "zoom": {
+          "from": 1.0,
+          "to": 1.12
+        },
+        "pan_x": {
+          "from": 0,
+          "to": 0
+        },
+        "pan_y": {
+          "from": -25,
+          "to": 25
+        },
+        "transition_in": "cut"
+      }
+    },
+    {
+      "id": 21,
+      "start": 126.5,
+      "end": 134.4,
+      "on_screen_text": "RUNTUH DARI DALAM",
+      "narration_summary": "Satu pelajaran dari Troya: benteng terkuat sekalipun selalu runtuh dari dalam.",
+      "visual": {
+        "type": "2d-stickman",
+        "asset_filename": "scenes/scene_21.png",
+        "background": "#18181B",
+        "composition": "silhouette-dramatic",
+        "characters": [
+          {
+            "role": "Siluet Penjaga",
+            "accessory": "perisai retak aksen #D97706",
+            "pose": "berdiri di depan gerbang yang retak dari arah dalam"
+          }
+        ],
+        "props_and_environment": "Benteng batu kokoh dengan retakan cahaya merah #DC2626 dan emas #D97706 memancar dari dalam gerbang",
+        "image_prompt": "Clean minimalist 2D stickman vector illustration on dark charcoal background #18181B, bold white ink outlines #F9FAFB, an imposing stone fortress wall cracking open from the inside with glowing crimson #DC2626 and amber #D97706 light beams radiating outward, a small stickman figure standing in silhouette before the fracturing gate, powerful visual metaphor, 9:16 vertical framing with empty top and bottom margins, no text",
+        "negative_prompt": "3d render, photorealistic, realistic human anatomy, detailed face, anime, watermark, text, letters, numbers, blurry"
+      },
+      "camera_2d": {
+        "zoom": {
+          "from": 1.0,
+          "to": 1.15
+        },
+        "pan_x": {
+          "from": 0,
+          "to": 0
+        },
+        "pan_y": {
+          "from": 0,
+          "to": 0
+        },
+        "transition_in": "fade"
+      }
+    }
+  ]
+}
