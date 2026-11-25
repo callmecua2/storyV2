@@ -1,0 +1,3242 @@
+```python
+import json
+import re
+
+storyboard = {
+  "version": "storyV2",
+  "title": "Kuda Troya dan Sejarah Perang Troya yang Terkenal",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "duration": 134.4,
+  "audioPath": "audio/audio.mp3",
+  "transcriptPath": "audio/transcript.srt",
+  "style": {
+    "animationStyle": "2D Stickman Animation",
+    "description": "Ilustrasi edukasi sejarah 2D minimalis bergaya stickman dengan garis tinta tegas, kepala bulat ekspresif tanpa detail wajah rumit, pose tubuh dinamis, serta properti ikonik Zaman Perunggu.",
+    "factions": {
+      "greek": {
+        "name": "Yunani (Mikenai/Sparta)",
+        "helmetCrestColor": "#EF4444",
+        "equipment": "Helm Korintus berjambul merah, perisai bundar hoplon, dan tombak perunggu"
+      },
+      "trojan": {
+        "name": "Troya",
+        "helmetCrestColor": "#F59E0B",
+        "equipment": "Helm perunggu berjambul emas, perisai perunggu, dan busur panah di atas tembok benteng"
+      }
+    }
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 7.8,
+      "duration": 7.8,
+      "on_screen_text": "10 Tahun Pengepungan",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "isometric-blocks",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [0, 0.1, 6.2],
+          "to": [0, 0.1, 5.3],
+          "fov": 40,
+          "lookAt": [0, 0.1, 0]
+        },
+        "stickman_scene": {
+          "composition": "Bidang datar frontal 2D menampilkan tembok batu Troya yang menjulang di sisi kanan dan barisan prajurit stickman Yunani mengepung dari sisi kiri.",
+          "characters": "Prajurit stickman Yunani berhelm Korintus jambul merah (#EF4444) memegang tombak dan perisai bundar berhadapan dengan pemanah stickman Troya berhelm jambul emas (#F59E0B) di puncak tembok.",
+          "action": "Pasukan stickman Yunani berulang kali menggempur kaki tembok Troya, namun terpukul mundur oleh hujan panah dari menara benteng."
+        },
+        "data": {
+          "autoRotateSpeed": 0.015,
+          "blocks": [
+            {
+              "label": "Durasi Pengepungan",
+              "value": 10,
+              "displayValue": "10 Tahun",
+              "highlight": True
+            },
+            {
+              "label": "Korban Prajurit",
+              "value": 8,
+              "displayValue": "Puluhan Ribu",
+              "highlight": False
+            },
+            {
+              "label": "Tembok Ditembus",
+              "value": 0,
+              "displayValue": "0 Kali",
+              "highlight": False
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 2,
+      "start": 7.8,
+      "end": 17.1,
+      "duration": 9.3,
+      "on_screen_text": "Satu Kebohongan Besar",
+      "motion": "zoom_out",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [0, 0.1, 5.3],
+          "to": [0, 0.1, 6.2],
+          "fov": 40,
+          "lookAt": [0, 0.1, 0]
+        },
+        "stickman_scene": {
+          "composition": "Tampilan frontal 2D dengan siluet raksasa Kuda Kayu Troya di tengah layar dan gerbang kota yang perlahan terbuka.",
+          "characters": "Satu stickman arsitek Yunani berhelm jambul merah (#EF4444) menunjuk cetak biru kuda kayu, sementara stickman penjaga Troya berhelm jambul emas (#F59E0B) mengamati dengan heran.",
+          "action": "Stickman Yunani membisikkan rencana tipu daya di balik bayangan patung kuda kayu raksasa."
+        },
+        "data": {
+          "autoRotateSpeed": -0.015,
+          "cards": [
+            {
+              "label": "TITIK BALIK SEJARAH",
+              "title": "Bukan Kekuatan Senjata",
+              "value": "Tipu Daya",
+              "subtitle": "Benteng terkuat Zaman Perunggu runtuh akibat muslihat perang psikologis.",
+              "highlight": True
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 3,
+      "start": 17.1,
+      "end": 27.3,
+      "duration": 10.2,
+      "on_screen_text": "Abad ke-12 SM",
+      "motion": "pan_right",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [-0.4, 0.1, 5.8],
+          "to": [0.4, 0.1, 5.8],
+          "fov": 40,
+          "lookAt": [0, 0.1, 0]
+        },
+        "stickman_scene": {
+          "composition": "Panel datar 2D menampilkan dermaga Sparta dengan kapal dayung Zaman Perunggu siap berlayar ke arah timur.",
+          "characters": "Stickman Pangeran Paris berhelm jambul emas (#F59E0B) menggandeng stickman Helen berlari cepat menuju kapal layar Troya.",
+          "action": "Paris dan Helen melompat ke atas kapal dayung Troya dan berlayar meninggalkan pesisir Sparta."
+        },
+        "data": {
+          "autoRotateSpeed": 0.012,
+          "cards": [
+            {
+              "label": "PEMICU KONFLIK • ABAD KE-12 SM",
+              "title": "Pelarian Paris & Helen",
+              "value": "Sparta ke Troya",
+              "subtitle": "Pangeran Paris membawa kabur Ratu Helen melintasi Laut Aegea.",
+              "highlight": True
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 4,
+      "start": 27.3,
+      "end": 33.06,
+      "duration": 5.76,
+      "on_screen_text": "Penghinaan Politik Yunani",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "network-nodes",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [0, 0.1, 6.2],
+          "to": [0, 0.1, 5.3],
+          "fov": 40,
+          "lookAt": [0, 0.1, 0]
+        },
+        "stickman_scene": {
+          "composition": "Diagram jaringan 2D frontal yang menghubungkan empat figur stickman kerajaan Zaman Perunggu.",
+          "characters": "Stickman Helen di pusat, terhubung ke stickman Raja Menelaus dan Raja Agamemnon berjambul merah (#EF4444) serta Pangeran Paris berjambul emas (#F59E0B).",
+          "action": "Stickman Menelaus mengepalkan tangan penuh amarah dan menyerahkan tongkat komando kepada kakaknya, Agamemnon."
+        },
+        "data": {
+          "autoRotateSpeed": 0.015,
+          "nodes": [
+            {
+              "id": "helen",
+              "label": "Helen dari Sparta",
+              "sublabel": "Pusat krisis diplomatik",
+              "size": 1.25,
+              "highlight": True
+            },
+            {
+              "id": "menelaus",
+              "label": "Raja Menelaus",
+              "sublabel": "Penguasa Sparta yang terhina",
+              "size": 0.95,
+              "highlight": False
+            },
+            {
+              "id": "agamemnon",
+              "label": "Raja Agamemnon",
+              "sublabel": "Panglima koalisi Mikenai",
+              "size": 0.95,
+              "highlight": False
+            },
+            {
+              "id": "paris",
+              "label": "Pangeran Paris",
+              "sublabel": "Pewaris kerajaan Troya",
+              "size": 0.95,
+              "highlight": False
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 5,
+      "start": 33.06,
+      "end": 42.17,
+      "duration": 9.11,
+      "on_screen_text": "1.000 Kapal Perang",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "isometric-blocks",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#EF4444",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [0, 0.1, 6.2],
+          "to": [0, 0.1, 5.3],
+          "fov": 40,
+          "lookAt": [0, 0.1, 0]
+        },
+        "stickman_scene": {
+          "composition": "Panorama 2D frontal Laut Aegea dipenuhi armada kapal dayung Yunani yang mendarat di pantai Troya.",
+          "characters": "Stickman Raja Agamemnon berdiri di haluan kapal utama dengan helm Korintus jambul merah (#EF4444) mengacungkan tombak ke arah pantai Troya.",
+          "action": "Ratusan prajurit stickman Yunani melompat turun dari kapal dayung ke pesisir pantai dan membentuk barisan perisai."
+        },
+        "data": {
+          "autoRotateSpeed": -0.015,
+          "blocks": [
+            {
+              "label": "Armada Kapal Yunani",
+              "value": 1000,
+              "displayValue": "1.000+ Kapal",
+              "highlight": True
+            },
+            {
+              "label": "Lintas Laut Aegea",
+              "value": 650,
+              "displayValue": "Invasi Pesisir",
+              "highlight": False
+            },
+            {
+              "label": "Koalisi Kota Yunani",
+              "value": 450,
+              "displayValue": "Pasukan Gabungan",
+              "highlight": False
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 6,
+      "start": 42.17,
+      "end": 47.9,
+      "duration": 5.73,
+      "on_screen_text": "Tembok Batu Troya",
+      "motion": "zoom_out",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [0, 0.1, 5.3],
+          "to": [0, 0.1, 6.2],
+          "fov": 40,
+          "lookAt": [0, 0.1, 0]
+        },
+        "stickman_scene": {
+          "composition": "Tampilan vertikal 2D frontal yang menonjolkan tinggi menjulang tembok batu raksasa Troya dari dasar hingga menara jaga.",
+          "characters": "Prajurit stickman Troya berhelm jambul emas (#F59E0B) mendorong batu besar dan membidikkan panah dari atas dinding batu tebal ke arah stickman Yunani (#EF4444) di bawah.",
+          "action": "Tangga kepung pasukan stickman Yunani patah dan jatuh saat menghantam dinding batu raksasa Troya."
+        },
+        "data": {
+          "autoRotateSpeed": 0.012,
+          "cards": [
+            {
+              "label": "PERTAHANAN LEGENDARIS",
+              "title": "Benteng Batu Raksasa Troya",
+              "value": "Tak Tertembus",
+              "subtitle": "Dinding batu miring dan menara pengawas mematahkan setiap serbuan frontal.",
+              "highlight": True
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 7,
+      "start": 47.9,
+      "end": 52.87,
+      "duration": 4.97,
+      "on_screen_text": "Perang Atrisi",
+      "motion": "pan_left",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "isometric-blocks",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [0.4, 0.1, 5.8],
+          "to": [-0.4, 0.1, 5.8],
+          "fov": 40,
+          "lookAt": [0, 0.1, 0]
+        },
+        "stickman_scene": {
+          "composition": "Medan datar 2D terbagi dua seimbang antara kamp tenda Yunani di kiri dan tembok kota Troya di kanan.",
+          "characters": "Barisan stickman Yunani (#EF4444) dan stickman Troya (#F59E0B) saling berhadapan dengan perisai terangkat dalam kebuntuan panjang.",
+          "action": "Kedua pasukan stickman maju dan mundur berulang kali tanpa ada yang mampu merebut wilayah lawan."
+        },
+        "data": {
+          "autoRotateSpeed": -0.012,
+          "blocks": [
+            {
+              "label": "Kekuatan Yunani",
+              "value": 50,
+              "displayValue": "Dominan di Laut",
+              "highlight": False
+            },
+            {
+              "label": "Pertahanan Troya",
+              "value": 50,
+              "displayValue": "Kokoh di Benteng",
+              "highlight": False
+            },
+            {
+              "label": "Hasil 10 Tahun",
+              "value": 100,
+              "displayValue": "Imbang Tanpa Pemenang",
+              "highlight": True
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 8,
+      "start": 52.87,
+      "end": 58.4,
+      "duration": 5.53,
+      "on_screen_text": "Prajurit Terhebat Yunani",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#EF4444",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [0, 0.1, 6.2],
+          "to": [0, 0.1, 5.3],
+          "fov": 40,
+          "lookAt": [0, 0.1, 0]
+        },
+        "stickman_scene": {
+          "composition": "Fokus frontal 2D pada sosok heroik stickman Achilles di tengah medan tempur dengan efek garis kilat kecepatan.",
+          "characters": "Stickman Achilles mengenakan helm Korintus berjambul merah terang (#EF4444), perisai bundar perunggu berkilau, dan tombak panjang.",
+          "action": "Achilles melesat maju menangkis serbuan tombak lawan dengan gerakan lincah dan presisi mematikan."
+        },
+        "data": {
+          "autoRotateSpeed": 0.015,
+          "cards": [
+            {
+              "label": "Ujung Tombak Yunani",
+              "title": "Achilles dari Myrmidon",
+              "value": "Hampir Tak Terkalahkan",
+              "subtitle": "Kecepatan dan ketangguhannya menjadi mimpi buruk bagi barisan depan Troya.",
+              "highlight": True
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 9,
+      "start": 58.4,
+      "end": 63.38,
+      "duration": 4.98,
+      "on_screen_text": "Benteng Terakhir Troya",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [0, 0.1, 6.2],
+          "to": [0, 0.1, 5.3],
+          "fov": 40,
+          "lookAt": [0, 0.1, 0]
+        },
+        "stickman_scene": {
+          "composition": "Fokus frontal 2D pada sosok stickman Pangeran Hector berdiri gagah di depan gerbang utama Troya.",
+          "characters": "Stickman Pangeran Hector berhelm perunggu jambul emas (#F59E0B) mengangkat perisai besar dan tombak di depan pasukannya.",
+          "action": "Hector mengetukkan tombak ke perisainya untuk membakar semangat prajurit Troya yang bertahan."
+        },
+        "data": {
+          "autoRotateSpeed": -0.015,
+          "cards": [
+            {
+              "label": "PELINDUNG KOTA TROYA",
+              "title": "Pangeran Hector",
+              "value": "Komandan Utama",
+              "subtitle": "Tumpuan terakhir Troya yang menjaga moral pasukan dan gerbang kota tetap utuh.",
+              "highlight": True
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 10,
+      "start": 63.38,
+      "end": 68.42,
+      "duration": 5.04,
+      "on_screen_text": "Duel Achilles vs Hector",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#EF4444",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [0, 0.1, 6.2],
+          "to": [0, 0.1, 5.3],
+          "fov": 40,
+          "lookAt": [0, 0.1, 0]
+        },
+        "stickman_scene": {
+          "composition": "Duel satu lawan satu 2D frontal di dataran terbuka depan gerbang Troya dengan percikan benturan senjata.",
+          "characters": "Stickman Achilles berjambul merah (#EF4444) beradu tombak dan perisai langsung melawan stickman Hector berjambul emas (#F59E0B).",
+          "action": "Setelah benturan tombak sengit, Achilles melancarkan tusukan penentu yang menjatuhkan Hector ke tanah."
+        },
+        "data": {
+          "autoRotateSpeed": 0.015,
+          "cards": [
+            {
+              "label": "FAKSI YUNANI",
+              "title": "Achilles",
+              "value": "Pemenang Duel",
+              "subtitle": "Menumbangkan panglima tertinggi Troya dalam pertarungan satu lawan satu.",
+              "highlight": True
+            },
+            {
+              "label": "FAKSI TROYA",
+              "title": "Pangeran Hector",
+              "value": "Gugur di Medan Laga",
+              "subtitle": "Bertarung hingga titik darah penghabisan demi melindungi negerinya.",
+              "highlight": False
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 11,
+      "start": 68.42,
+      "end": 73.8,
+      "duration": 5.38,
+      "on_screen_text": "Gerbang Tetap Terkunci",
+      "motion": "zoom_out",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [0, 0.1, 5.3],
+          "to": [0, 0.1, 6.2],
+          "fov": 40,
+          "lookAt": [0, 0.1, 0]
+        },
+        "stickman_scene": {
+          "composition": "Bidang frontal 2D menyorot palang kayu raksasa yang mengunci gerbang perunggu Troya dari sisi dalam.",
+          "characters": "Prajurit stickman Troya berjambul emas (#F59E0B) berjaga rapat di balik gerbang sementara stickman Yunani (#EF4444) tertahan di luar.",
+          "action": "Gerbang kota menutup rapat dengan palang besi dan kayu raksasa, menggagalkan upaya Yunani menerobos masuk."
+        },
+        "data": {
+          "autoRotateSpeed": -0.012,
+          "cards": [
+            {
+              "label": "KEBUNTUAN TAKTIS",
+              "title": "Hector Gugur, Troya Bertahan",
+              "value": "Gerbang Terkunci",
+              "subtitle": "Kematian sang pangeran tidak serta-merta meruntuhkan pertahanan fisik kota.",
+              "highlight": True
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 12,
+      "start": 73.8,
+      "end": 80.68,
+      "duration": 6.88,
+      "on_screen_text": "Taktik Psikologis Odysseus",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "network-nodes",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#38BDF8",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [0, 0.1, 6.2],
+          "to": [0, 0.1, 5.3],
+          "fov": 40,
+          "lookAt": [0, 0.1, 0]
+        },
+        "stickman_scene": {
+          "composition": "Diagram alur strategi 2D frontal dengan stickman Odysseus di pusat dan sketsa rencana Kuda Kayu.",
+          "characters": "Stickman Odysseus berhelm Korintus jambul merah (#EF4444) mengetuk pelipis kepalanya sambil menunjuk skema taktik kepada para komandan Yunani.",
+          "action": "Odysseus memaparkan empat tahap muslihat: mundur palsu, umpan persembahan, euforia lawan, dan penyusupan malam."
+        },
+        "data": {
+          "autoRotateSpeed": 0.015,
+          "nodes": [
+            {
+              "id": "odysseus",
+              "label": "Strategi Odysseus",
+              "sublabel": "Perang psikologis pengganti serbuan frontal",
+              "size": 1.25,
+              "highlight": True
+            },
+            {
+              "id": "retreat",
+              "label": "1. Mundur Palsu",
+              "sublabel": "Bakar kamp dan sembunyikan armada",
+              "size": 0.95,
+              "highlight": False
+            },
+            {
+              "id": "trojan_horse",
+              "label": "2. Kuda Kayu Raksasa",
+              "sublabel": "Umpan persembahan untuk Dewi Athena",
+              "size": 0.95,
+              "highlight": False
+            },
+            {
+              "id": "night_raid",
+              "label": "3. Serangan Tengah Malam",
+              "sublabel": "Buka gerbang utama dari dalam",
+              "size": 0.95,
+              "highlight": False
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 13,
+      "start": 80.68,
+      "end": 86.08,
+      "duration": 5.4,
+      "on_screen_text": "Pura-Pura Menyerah",
+      "motion": "pan_right",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#38BDF8",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [-0.4, 0.1, 5.8],
+          "to": [0.4, 0.1, 5.8],
+          "fov": 40,
+          "lookAt": [0, 0.1, 0]
+        },
+        "stickman_scene": {
+          "composition": "Pesisir pantai Troya 2D frontal dengan kepulan asap dari tenda-tenda Yunani yang terbakar dan kapal menjauh ke cakrawala.",
+          "characters": "Pasukan stickman Yunani berhelm jambul merah (#EF4444) mendayung kapal menjauh, sementara pengintai stickman Troya (#F59E0B) mengintip dari menara.",
+          "action": "Pasukan Yunani membakar kemah mereka sendiri lalu berlayar bersembunyi di balik pulau terdekat."
+        },
+        "data": {
+          "autoRotateSpeed": -0.015,
+          "cards": [
+            {
+              "label": "SANDIWARA PERANG",
+              "title": "Mundur Palsu Pasukan Yunani",
+              "value": "Pantai Kosong",
+              "subtitle": "Kamp dibakar dan armada berlayar pergi untuk meyakinkan Troya bahwa perang usai.",
+              "highlight": True
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 14,
+      "start": 86.08,
+      "end": 93.55,
+      "duration": 7.47,
+      "on_screen_text": "Kuda Kayu Raksasa",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [0, 0.1, 6.2],
+          "to": [0, 0.1, 5.3],
+          "fov": 40,
+          "lookAt": [0, 0.1, 0]
+        },
+        "stickman_scene": {
+          "composition": "Bidang frontal 2D memperlihatkan patung Kuda Troya kayu raksasa beroda berdiri tepat di depan gerbang kota dengan tampilan irisan rongga perut tersembunyi.",
+          "characters": "Di dalam perut kuda, puluhan prajurit elit stickman Yunani berjambul merah (#EF4444) berjongkok senyap; di luar, stickman Troya (#F59E0B) mengamati dengan takjub.",
+          "action": "Prajurit stickman Yunani menutup palka kayu di perut kuda dan menahan napas dalam diam."
+        },
+        "data": {
+          "autoRotateSpeed": 0.015,
+          "cards": [
+            {
+              "label": "UMPAN DEWI ATHENA",
+              "title": "Patung Kuda Kayu Raksasa",
+              "value": "Persembahan Palsu",
+              "subtitle": "Dirancang sebagai simbol penyerahan diri sekaligus persembahan suci bagi Dewi Athena.",
+              "highlight": True
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 15,
+      "start": 93.55,
+      "end": 99.19,
+      "duration": 5.64,
+      "on_screen_text": "Pesta Semalaman",
+      "motion": "pan_left",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [0.4, 0.1, 5.8],
+          "to": [-0.4, 0.1, 5.8],
+          "fov": 40,
+          "lookAt": [0, 0.1, 0]
+        },
+        "stickman_scene": {
+          "composition": "Alun-alun kota Troya 2D frontal dengan Kuda Troya di tengah dikelilingi obor perayaan dan cawan pesta.",
+          "characters": "Warga dan prajurit stickman Troya berhelm jambul emas (#F59E0B) menarik tali tambang memasukkan kuda ke kota lalu menari mengangkat cawan.",
+          "action": "Warga Troya berpesta pora merayakan kemenangan hingga kelelahan dan tertidur lelap."
+        },
+        "data": {
+          "autoRotateSpeed": -0.015,
+          "cards": [
+            {
+              "label": "EUFORIA KEMENANGAN",
+              "title": "Jebakan Masuk ke Jantung Kota",
+              "value": "Kewaspadaan Runtuh",
+              "subtitle": "Warga Troya menarik kuda kayu melewati gerbang dan merayakan akhir perang semalaman.",
+              "highlight": True
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 16,
+      "start": 99.19,
+      "end": 107.03,
+      "duration": 7.84,
+      "on_screen_text": "Infiltrasi Tengah Malam",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#EF4444",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [0, 0.1, 6.2],
+          "to": [0, 0.1, 5.3],
+          "fov": 40,
+          "lookAt": [0, 0.1, 0]
+        },
+        "stickman_scene": {
+          "composition": "Adegan malam gelap 2D frontal di gerbang dalam Troya dengan bulan sabit di atas dan palka perut kuda terbuka.",
+          "characters": "Prajurit elit stickman Yunani berhelm jambul merah (#EF4444) turun menggunakan tali dari perut kuda, sementara penjaga stickman Troya (#F59E0B) tertidur di pos.",
+          "action": "Pasukan stickman Yunani melumpuhkan penjaga secara senyap lalu mengangkat palang kayu gerbang utama."
+        },
+        "data": {
+          "autoRotateSpeed": 0.015,
+          "cards": [
+            {
+              "label": "OPERASI TENGAH MALAM",
+              "title": "Pasukan Elit Keluar dari Kuda",
+              "value": "Gerbang Dibuka",
+              "subtitle": "Penjaga dilumpuhkan dan pintu utama Troya dibuka bagi armada Yunani yang kembali.",
+              "highlight": True
+            },
+            {
+              "label": "PERTAHANAN DALAM",
+              "title": "Penjaga Troya Lengah",
+              "value": "Lumpuh Total",
+              "subtitle": "Kelelahan pascapesta membuat pasukan jaga tidak sempat membunyikan tanda bahaya.",
+              "highlight": False
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 17,
+      "start": 107.03,
+      "end": 111.45,
+      "duration": 4.42,
+      "on_screen_text": "Troya Dibakar Habis",
+      "motion": "zoom_out",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#EF4444",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [0, 0.1, 5.3],
+          "to": [0, 0.1, 6.2],
+          "fov": 40,
+          "lookAt": [0, 0.1, 0]
+        },
+        "stickman_scene": {
+          "composition": "Siluet kota Troya 2D frontal dilalap kobaran api merah menyala dan asap hitam membubung tinggi.",
+          "characters": "Pasukan stickman Yunani berjambul merah (#EF4444) menyerbu masuk lewat gerbang terbuka membawa obor menyala.",
+          "action": "Dalam hitungan jam, menara dan bangunan batu Troya runtuh terbakar rata dengan tanah."
+        },
+        "data": {
+          "autoRotateSpeed": -0.015,
+          "cards": [
+            {
+              "label": "AKHIR PERANG TROYA",
+              "title": "Kota Megah Rata dengan Tanah",
+              "value": "Dalam Hitungan Jam",
+              "subtitle": "Serbuan mendadak dari dalam menghancurkan kerajaan yang bertahan selama 10 tahun.",
+              "highlight": True
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 18,
+      "start": 111.45,
+      "end": 116.4,
+      "duration": 4.95,
+      "on_screen_text": "Epik Iliad Homeros",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "paper-flip-stage",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#38BDF8",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [0, 0.1, 6.2],
+          "to": [0, 0.1, 5.3],
+          "fov": 40,
+          "lookAt": [0, 0.1, 0]
+        },
+        "stickman_scene": {
+          "composition": "Panggung lembaran gulungan papirus 2D frontal menampilkan penyair Yunani kuno membacakan syair.",
+          "characters": "Stickman penyair Homeros memegang gulungan naskah epik di depan siluet bayangan prajurit Yunani (#EF4444) dan Troya (#F59E0B).",
+          "action": "Homeros membacakan kisah epik Iliad yang selama berabad-abad dianggap sekadar mitos sastra."
+        },
+        "data": {
+          "autoRotateSpeed": 0.012,
+          "cards": [
+            {
+              "label": "ARSIP SASTRA KUNO",
+              "title": "Epik Iliad Karya Homeros",
+              "value": "Dianggap Dongeng",
+              "subtitle": "Selama berabad-abad sejarawan menduga kisah Perang Troya hanyalah legenda mitologi.",
+              "highlight": True
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 19,
+      "start": 116.4,
+      "end": 126.46,
+      "duration": 10.06,
+      "on_screen_text": "Bukti Arkeologi Hisarlik",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "paper-flip-stage",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#38BDF8",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [0, 0.1, 6.2],
+          "to": [0, 0.1, 5.3],
+          "fov": 40,
+          "lookAt": [0, 0.1, 0]
+        },
+        "stickman_scene": {
+          "composition": "Penampang galian arkeologi 2D frontal di bukit Hisarlik, Turki yang menyingkap lapisan fondasi benteng batu dan abu arang.",
+          "characters": "Dua stickman arkeolog bertopi lapangan menggali lapisan tanah menggunakan sekop dan kuas di samping reruntuhan tembok Zaman Perunggu.",
+          "action": "Stickman arkeolog menemukan fondasi tembok benteng kuno beserta lapisan abu bekas kebakaran hebat."
+        },
+        "data": {
+          "autoRotateSpeed": -0.012,
+          "cards": [
+            {
+              "label": "EKSKAVASI HISARLIK, TURKI",
+              "title": "Reruntuhan Benteng Asli Ditemukan",
+              "value": "Bukti Zaman Perunggu",
+              "subtitle": "Penggalian arkeologis mengungkap struktur kota benteng dan jejak kebakaran besar.",
+              "highlight": True
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 20,
+      "start": 126.46,
+      "end": 134.4,
+      "duration": 7.94,
+      "on_screen_text": "Runtuh Dari Dalam",
+      "motion": "zoom_out",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#10B981",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [0, 0.1, 5.3],
+          "to": [0, 0.1, 6.2],
+          "fov": 40,
+          "lookAt": [0, 0.1, 0]
+        },
+        "stickman_scene": {
+          "composition": "Visual simbolis 2D frontal menampilkan benteng batu kokoh dengan retakan cahaya hijau zamrud (#10B981) yang muncul dari bagian dalam gerbang.",
+          "characters": "Satu stickman penjaga berdiri di dalam gerbang yang terbuka sendiri sementara tembok luar tetap utuh tanpa goresan.",
+          "action": "Benteng kokoh perlahan terbelah dari sisi dalam, menegaskan pesan abadi sejarah Troya."
+        },
+        "data": {
+          "autoRotateSpeed": 0.01,
+          "cards": [
+            {
+              "label": "PELAJARAN ABADI SEJARAH",
+              "title": "Benteng Terkuat Runtuh dari Dalam",
+              "value": "Waspada Kelengahan",
+              "subtitle": "Pertahanan luar yang mustahil ditembus dapat hancur ketika gerbang dibuka sendiri.",
+              "highlight": True
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
+
+# Strict Validation
+scenes = storyboard["scenes"]
+assert 18 <= len(scenes) <= 21, f"Invalid scene count: {len(scenes)}"
+assert scenes[0]["start"] == 0, "Scene 1 start must be 0"
+assert scenes[-1]["end"] == 134.4, f"Last scene end must be 134.4, got {scenes[-1]['end']}"
+
+hex_re = re.compile(r"^#[0-9A-Fa-f]{6}$")
+
+for i, s in enumerate(scenes):
+    assert s["id"] == i + 1, f"ID mismatch at {i}"
+    if i > 0:
+        assert s["start"] == scenes[i-1]["end"], f"Continuity gap at scene {s['id']}"
+    assert round(s["end"] - s["start"], 3) == s["duration"], f"Duration mismatch at scene {s['id']}"
+    if s["on_screen_text"] is not None:
+        words = s["on_screen_text"].split()
+        assert len(words) <= 4, f"Too many words in on_screen_text at scene {s['id']}: {s['on_screen_text']}"
+    v = s["visual"]
+    colors = v["colors"]
+    for ck, cv in colors.items():
+        assert hex_re.match(cv), f"Invalid hex color {ck}={cv} at scene {s['id']}"
+    cam = v["camera"]
+    assert cam["fov"] == 40
+    assert cam["lookAt"] == [0, 0.1, 0]
+    speed = v["data"]["autoRotateSpeed"]
+    assert -0.03 <= speed <= 0.03 and speed != 0
+    preset = v["preset"]
+    if preset in ("floating-cards", "paper-flip-stage"):
+        cards = v["data"]["cards"]
+        assert 1 <= len(cards) <= 3
+        for c in cards:
+            assert len(c["label"]) <= 48
+            assert len(c["title"]) <= 100
+            assert len(c["value"]) <= 64
+            assert len(c["subtitle"]) <= 140
+            assert isinstance(c["highlight"], bool)
+    elif preset == "network-nodes":
+        nodes = v["data"]["nodes"]
+        assert 3 <= len(nodes) <= 6
+        assert nodes[0]["size"] == 1.25 and nodes[0]["highlight"] is True
+        for idx, n in enumerate(nodes):
+            assert len(n["id"]) <= 32
+            assert len(n["label"]) <= 56
+            assert len(n["sublabel"]) <= 80
+            if idx > 0:
+                assert n["size"] == 0.95
+    elif preset == "isometric-blocks":
+        blocks = v["data"]["blocks"]
+        assert 2 <= len(blocks) <= 4
+        for b in blocks:
+            assert len(b["label"]) <= 48
+            assert b["value"] >= 0
+            assert len(b["displayValue"]) <= 36
+            assert isinstance(b["highlight"], bool)
+
+print("ALL_VALIDATIONS_PASSED")
+print(json.dumps(storyboard, ensure_ascii=False, indent=2))
+
+
+```
+
+```text
+ALL_VALIDATIONS_PASSED
+{
+  "version": "storyV2",
+  "title": "Kuda Troya dan Sejarah Perang Troya yang Terkenal",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "duration": 134.4,
+  "audioPath": "audio/audio.mp3",
+  "transcriptPath": "audio/transcript.srt",
+  "style": {
+    "animationStyle": "2D Stickman Animation",
+    "description": "Ilustrasi edukasi sejarah 2D minimalis bergaya stickman dengan garis tinta tegas, kepala bulat ekspresif tanpa detail wajah rumit, pose tubuh dinamis, serta properti ikonik Zaman Perunggu.",
+    "factions": {
+      "greek": {
+        "name": "Yunani (Mikenai/Sparta)",
+        "helmetCrestColor": "#EF4444",
+        "equipment": "Helm Korintus berjambul merah, perisai bundar hoplon, dan tombak perunggu"
+      },
+      "trojan": {
+        "name": "Troya",
+        "helmetCrestColor": "#F59E0B",
+        "equipment": "Helm perunggu berjambul emas, perisai perunggu, dan busur panah di atas tembok benteng"
+      }
+    }
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 7.8,
+      "duration": 7.8,
+      "on_screen_text": "10 Tahun Pengepungan",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "isometric-blocks",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [
+            0,
+            0.1,
+            6.2
+          ],
+          "to": [
+            0,
+            0.1,
+            5.3
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "stickman_scene": {
+          "composition": "Bidang datar frontal 2D menampilkan tembok batu Troya yang menjulang di sisi kanan dan barisan prajurit stickman Yunani mengepung dari sisi kiri.",
+          "characters": "Prajurit stickman Yunani berhelm Korintus jambul merah (#EF4444) memegang tombak dan perisai bundar berhadapan dengan pemanah stickman Troya berhelm jambul emas (#F59E0B) di puncak tembok.",
+          "action": "Pasukan stickman Yunani berulang kali menggempur kaki tembok Troya, namun terpukul mundur oleh hujan panah dari menara benteng."
+        },
+        "data": {
+          "autoRotateSpeed": 0.015,
+          "blocks": [
+            {
+              "label": "Durasi Pengepungan",
+              "value": 10,
+              "displayValue": "10 Tahun",
+              "highlight": true
+            },
+            {
+              "label": "Korban Prajurit",
+              "value": 8,
+              "displayValue": "Puluhan Ribu",
+              "highlight": false
+            },
+            {
+              "label": "Tembok Ditembus",
+              "value": 0,
+              "displayValue": "0 Kali",
+              "highlight": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 2,
+      "start": 7.8,
+      "end": 17.1,
+      "duration": 9.3,
+      "on_screen_text": "Satu Kebohongan Besar",
+      "motion": "zoom_out",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [
+            0,
+            0.1,
+            5.3
+          ],
+          "to": [
+            0,
+            0.1,
+            6.2
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "stickman_scene": {
+          "composition": "Tampilan frontal 2D dengan siluet raksasa Kuda Kayu Troya di tengah layar dan gerbang kota yang perlahan terbuka.",
+          "characters": "Satu stickman arsitek Yunani berhelm jambul merah (#EF4444) menunjuk cetak biru kuda kayu, sementara stickman penjaga Troya berhelm jambul emas (#F59E0B) mengamati dengan heran.",
+          "action": "Stickman Yunani membisikkan rencana tipu daya di balik bayangan patung kuda kayu raksasa."
+        },
+        "data": {
+          "autoRotateSpeed": -0.015,
+          "cards": [
+            {
+              "label": "TITIK BALIK SEJARAH",
+              "title": "Bukan Kekuatan Senjata",
+              "value": "Tipu Daya",
+              "subtitle": "Benteng terkuat Zaman Perunggu runtuh akibat muslihat perang psikologis.",
+              "highlight": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 3,
+      "start": 17.1,
+      "end": 27.3,
+      "duration": 10.2,
+      "on_screen_text": "Abad ke-12 SM",
+      "motion": "pan_right",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [
+            -0.4,
+            0.1,
+            5.8
+          ],
+          "to": [
+            0.4,
+            0.1,
+            5.8
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "stickman_scene": {
+          "composition": "Panel datar 2D menampilkan dermaga Sparta dengan kapal dayung Zaman Perunggu siap berlayar ke arah timur.",
+          "characters": "Stickman Pangeran Paris berhelm jambul emas (#F59E0B) menggandeng stickman Helen berlari cepat menuju kapal layar Troya.",
+          "action": "Paris dan Helen melompat ke atas kapal dayung Troya dan berlayar meninggalkan pesisir Sparta."
+        },
+        "data": {
+          "autoRotateSpeed": 0.012,
+          "cards": [
+            {
+              "label": "PEMICU KONFLIK • ABAD KE-12 SM",
+              "title": "Pelarian Paris & Helen",
+              "value": "Sparta ke Troya",
+              "subtitle": "Pangeran Paris membawa kabur Ratu Helen melintasi Laut Aegea.",
+              "highlight": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 4,
+      "start": 27.3,
+      "end": 33.06,
+      "duration": 5.76,
+      "on_screen_text": "Penghinaan Politik Yunani",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "network-nodes",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [
+            0,
+            0.1,
+            6.2
+          ],
+          "to": [
+            0,
+            0.1,
+            5.3
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "stickman_scene": {
+          "composition": "Diagram jaringan 2D frontal yang menghubungkan empat figur stickman kerajaan Zaman Perunggu.",
+          "characters": "Stickman Helen di pusat, terhubung ke stickman Raja Menelaus dan Raja Agamemnon berjambul merah (#EF4444) serta Pangeran Paris berjambul emas (#F59E0B).",
+          "action": "Stickman Menelaus mengepalkan tangan penuh amarah dan menyerahkan tongkat komando kepada kakaknya, Agamemnon."
+        },
+        "data": {
+          "autoRotateSpeed": 0.015,
+          "nodes": [
+            {
+              "id": "helen",
+              "label": "Helen dari Sparta",
+              "sublabel": "Pusat krisis diplomatik",
+              "size": 1.25,
+              "highlight": true
+            },
+            {
+              "id": "menelaus",
+              "label": "Raja Menelaus",
+              "sublabel": "Penguasa Sparta yang terhina",
+              "size": 0.95,
+              "highlight": false
+            },
+            {
+              "id": "agamemnon",
+              "label": "Raja Agamemnon",
+              "sublabel": "Panglima koalisi Mikenai",
+              "size": 0.95,
+              "highlight": false
+            },
+            {
+              "id": "paris",
+              "label": "Pangeran Paris",
+              "sublabel": "Pewaris kerajaan Troya",
+              "size": 0.95,
+              "highlight": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 5,
+      "start": 33.06,
+      "end": 42.17,
+      "duration": 9.11,
+      "on_screen_text": "1.000 Kapal Perang",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "isometric-blocks",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#EF4444",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [
+            0,
+            0.1,
+            6.2
+          ],
+          "to": [
+            0,
+            0.1,
+            5.3
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "stickman_scene": {
+          "composition": "Panorama 2D frontal Laut Aegea dipenuhi armada kapal dayung Yunani yang mendarat di pantai Troya.",
+          "characters": "Stickman Raja Agamemnon berdiri di haluan kapal utama dengan helm Korintus jambul merah (#EF4444) mengacungkan tombak ke arah pantai Troya.",
+          "action": "Ratusan prajurit stickman Yunani melompat turun dari kapal dayung ke pesisir pantai dan membentuk barisan perisai."
+        },
+        "data": {
+          "autoRotateSpeed": -0.015,
+          "blocks": [
+            {
+              "label": "Armada Kapal Yunani",
+              "value": 1000,
+              "displayValue": "1.000+ Kapal",
+              "highlight": true
+            },
+            {
+              "label": "Lintas Laut Aegea",
+              "value": 650,
+              "displayValue": "Invasi Pesisir",
+              "highlight": false
+            },
+            {
+              "label": "Koalisi Kota Yunani",
+              "value": 450,
+              "displayValue": "Pasukan Gabungan",
+              "highlight": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 6,
+      "start": 42.17,
+      "end": 47.9,
+      "duration": 5.73,
+      "on_screen_text": "Tembok Batu Troya",
+      "motion": "zoom_out",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [
+            0,
+            0.1,
+            5.3
+          ],
+          "to": [
+            0,
+            0.1,
+            6.2
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "stickman_scene": {
+          "composition": "Tampilan vertikal 2D frontal yang menonjolkan tinggi menjulang tembok batu raksasa Troya dari dasar hingga menara jaga.",
+          "characters": "Prajurit stickman Troya berhelm jambul emas (#F59E0B) mendorong batu besar dan membidikkan panah dari atas dinding batu tebal ke arah stickman Yunani (#EF4444) di bawah.",
+          "action": "Tangga kepung pasukan stickman Yunani patah dan jatuh saat menghantam dinding batu raksasa Troya."
+        },
+        "data": {
+          "autoRotateSpeed": 0.012,
+          "cards": [
+            {
+              "label": "PERTAHANAN LEGENDARIS",
+              "title": "Benteng Batu Raksasa Troya",
+              "value": "Tak Tertembus",
+              "subtitle": "Dinding batu miring dan menara pengawas mematahkan setiap serbuan frontal.",
+              "highlight": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 7,
+      "start": 47.9,
+      "end": 52.87,
+      "duration": 4.97,
+      "on_screen_text": "Perang Atrisi",
+      "motion": "pan_left",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "isometric-blocks",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [
+            0.4,
+            0.1,
+            5.8
+          ],
+          "to": [
+            -0.4,
+            0.1,
+            5.8
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "stickman_scene": {
+          "composition": "Medan datar 2D terbagi dua seimbang antara kamp tenda Yunani di kiri dan tembok kota Troya di kanan.",
+          "characters": "Barisan stickman Yunani (#EF4444) dan stickman Troya (#F59E0B) saling berhadapan dengan perisai terangkat dalam kebuntuan panjang.",
+          "action": "Kedua pasukan stickman maju dan mundur berulang kali tanpa ada yang mampu merebut wilayah lawan."
+        },
+        "data": {
+          "autoRotateSpeed": -0.012,
+          "blocks": [
+            {
+              "label": "Kekuatan Yunani",
+              "value": 50,
+              "displayValue": "Dominan di Laut",
+              "highlight": false
+            },
+            {
+              "label": "Pertahanan Troya",
+              "value": 50,
+              "displayValue": "Kokoh di Benteng",
+              "highlight": false
+            },
+            {
+              "label": "Hasil 10 Tahun",
+              "value": 100,
+              "displayValue": "Imbang Tanpa Pemenang",
+              "highlight": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 8,
+      "start": 52.87,
+      "end": 58.4,
+      "duration": 5.53,
+      "on_screen_text": "Prajurit Terhebat Yunani",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#EF4444",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [
+            0,
+            0.1,
+            6.2
+          ],
+          "to": [
+            0,
+            0.1,
+            5.3
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "stickman_scene": {
+          "composition": "Fokus frontal 2D pada sosok heroik stickman Achilles di tengah medan tempur dengan efek garis kilat kecepatan.",
+          "characters": "Stickman Achilles mengenakan helm Korintus berjambul merah terang (#EF4444), perisai bundar perunggu berkilau, dan tombak panjang.",
+          "action": "Achilles melesat maju menangkis serbuan tombak lawan dengan gerakan lincah dan presisi mematikan."
+        },
+        "data": {
+          "autoRotateSpeed": 0.015,
+          "cards": [
+            {
+              "label": "Ujung Tombak Yunani",
+              "title": "Achilles dari Myrmidon",
+              "value": "Hampir Tak Terkalahkan",
+              "subtitle": "Kecepatan dan ketangguhannya menjadi mimpi buruk bagi barisan depan Troya.",
+              "highlight": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 9,
+      "start": 58.4,
+      "end": 63.38,
+      "duration": 4.98,
+      "on_screen_text": "Benteng Terakhir Troya",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [
+            0,
+            0.1,
+            6.2
+          ],
+          "to": [
+            0,
+            0.1,
+            5.3
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "stickman_scene": {
+          "composition": "Fokus frontal 2D pada sosok stickman Pangeran Hector berdiri gagah di depan gerbang utama Troya.",
+          "characters": "Stickman Pangeran Hector berhelm perunggu jambul emas (#F59E0B) mengangkat perisai besar dan tombak di depan pasukannya.",
+          "action": "Hector mengetukkan tombak ke perisainya untuk membakar semangat prajurit Troya yang bertahan."
+        },
+        "data": {
+          "autoRotateSpeed": -0.015,
+          "cards": [
+            {
+              "label": "PELINDUNG KOTA TROYA",
+              "title": "Pangeran Hector",
+              "value": "Komandan Utama",
+              "subtitle": "Tumpuan terakhir Troya yang menjaga moral pasukan dan gerbang kota tetap utuh.",
+              "highlight": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 10,
+      "start": 63.38,
+      "end": 68.42,
+      "duration": 5.04,
+      "on_screen_text": "Duel Achilles vs Hector",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#EF4444",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [
+            0,
+            0.1,
+            6.2
+          ],
+          "to": [
+            0,
+            0.1,
+            5.3
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "stickman_scene": {
+          "composition": "Duel satu lawan satu 2D frontal di dataran terbuka depan gerbang Troya dengan percikan benturan senjata.",
+          "characters": "Stickman Achilles berjambul merah (#EF4444) beradu tombak dan perisai langsung melawan stickman Hector berjambul emas (#F59E0B).",
+          "action": "Setelah benturan tombak sengit, Achilles melancarkan tusukan penentu yang menjatuhkan Hector ke tanah."
+        },
+        "data": {
+          "autoRotateSpeed": 0.015,
+          "cards": [
+            {
+              "label": "FAKSI YUNANI",
+              "title": "Achilles",
+              "value": "Pemenang Duel",
+              "subtitle": "Menumbangkan panglima tertinggi Troya dalam pertarungan satu lawan satu.",
+              "highlight": true
+            },
+            {
+              "label": "FAKSI TROYA",
+              "title": "Pangeran Hector",
+              "value": "Gugur di Medan Laga",
+              "subtitle": "Bertarung hingga titik darah penghabisan demi melindungi negerinya.",
+              "highlight": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 11,
+      "start": 68.42,
+      "end": 73.8,
+      "duration": 5.38,
+      "on_screen_text": "Gerbang Tetap Terkunci",
+      "motion": "zoom_out",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [
+            0,
+            0.1,
+            5.3
+          ],
+          "to": [
+            0,
+            0.1,
+            6.2
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "stickman_scene": {
+          "composition": "Bidang frontal 2D menyorot palang kayu raksasa yang mengunci gerbang perunggu Troya dari sisi dalam.",
+          "characters": "Prajurit stickman Troya berjambul emas (#F59E0B) berjaga rapat di balik gerbang sementara stickman Yunani (#EF4444) tertahan di luar.",
+          "action": "Gerbang kota menutup rapat dengan palang besi dan kayu raksasa, menggagalkan upaya Yunani menerobos masuk."
+        },
+        "data": {
+          "autoRotateSpeed": -0.012,
+          "cards": [
+            {
+              "label": "KEBUNTUAN TAKTIS",
+              "title": "Hector Gugur, Troya Bertahan",
+              "value": "Gerbang Terkunci",
+              "subtitle": "Kematian sang pangeran tidak serta-merta meruntuhkan pertahanan fisik kota.",
+              "highlight": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 12,
+      "start": 73.8,
+      "end": 80.68,
+      "duration": 6.88,
+      "on_screen_text": "Taktik Psikologis Odysseus",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "network-nodes",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#38BDF8",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [
+            0,
+            0.1,
+            6.2
+          ],
+          "to": [
+            0,
+            0.1,
+            5.3
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "stickman_scene": {
+          "composition": "Diagram alur strategi 2D frontal dengan stickman Odysseus di pusat dan sketsa rencana Kuda Kayu.",
+          "characters": "Stickman Odysseus berhelm Korintus jambul merah (#EF4444) mengetuk pelipis kepalanya sambil menunjuk skema taktik kepada para komandan Yunani.",
+          "action": "Odysseus memaparkan empat tahap muslihat: mundur palsu, umpan persembahan, euforia lawan, dan penyusupan malam."
+        },
+        "data": {
+          "autoRotateSpeed": 0.015,
+          "nodes": [
+            {
+              "id": "odysseus",
+              "label": "Strategi Odysseus",
+              "sublabel": "Perang psikologis pengganti serbuan frontal",
+              "size": 1.25,
+              "highlight": true
+            },
+            {
+              "id": "retreat",
+              "label": "1. Mundur Palsu",
+              "sublabel": "Bakar kamp dan sembunyikan armada",
+              "size": 0.95,
+              "highlight": false
+            },
+            {
+              "id": "trojan_horse",
+              "label": "2. Kuda Kayu Raksasa",
+              "sublabel": "Umpan persembahan untuk Dewi Athena",
+              "size": 0.95,
+              "highlight": false
+            },
+            {
+              "id": "night_raid",
+              "label": "3. Serangan Tengah Malam",
+              "sublabel": "Buka gerbang utama dari dalam",
+              "size": 0.95,
+              "highlight": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 13,
+      "start": 80.68,
+      "end": 86.08,
+      "duration": 5.4,
+      "on_screen_text": "Pura-Pura Menyerah",
+      "motion": "pan_right",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#38BDF8",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [
+            -0.4,
+            0.1,
+            5.8
+          ],
+          "to": [
+            0.4,
+            0.1,
+            5.8
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "stickman_scene": {
+          "composition": "Pesisir pantai Troya 2D frontal dengan kepulan asap dari tenda-tenda Yunani yang terbakar dan kapal menjauh ke cakrawala.",
+          "characters": "Pasukan stickman Yunani berhelm jambul merah (#EF4444) mendayung kapal menjauh, sementara pengintai stickman Troya (#F59E0B) mengintip dari menara.",
+          "action": "Pasukan Yunani membakar kemah mereka sendiri lalu berlayar bersembunyi di balik pulau terdekat."
+        },
+        "data": {
+          "autoRotateSpeed": -0.015,
+          "cards": [
+            {
+              "label": "SANDIWARA PERANG",
+              "title": "Mundur Palsu Pasukan Yunani",
+              "value": "Pantai Kosong",
+              "subtitle": "Kamp dibakar dan armada berlayar pergi untuk meyakinkan Troya bahwa perang usai.",
+              "highlight": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 14,
+      "start": 86.08,
+      "end": 93.55,
+      "duration": 7.47,
+      "on_screen_text": "Kuda Kayu Raksasa",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [
+            0,
+            0.1,
+            6.2
+          ],
+          "to": [
+            0,
+            0.1,
+            5.3
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "stickman_scene": {
+          "composition": "Bidang frontal 2D memperlihatkan patung Kuda Troya kayu raksasa beroda berdiri tepat di depan gerbang kota dengan tampilan irisan rongga perut tersembunyi.",
+          "characters": "Di dalam perut kuda, puluhan prajurit elit stickman Yunani berjambul merah (#EF4444) berjongkok senyap; di luar, stickman Troya (#F59E0B) mengamati dengan takjub.",
+          "action": "Prajurit stickman Yunani menutup palka kayu di perut kuda dan menahan napas dalam diam."
+        },
+        "data": {
+          "autoRotateSpeed": 0.015,
+          "cards": [
+            {
+              "label": "UMPAN DEWI ATHENA",
+              "title": "Patung Kuda Kayu Raksasa",
+              "value": "Persembahan Palsu",
+              "subtitle": "Dirancang sebagai simbol penyerahan diri sekaligus persembahan suci bagi Dewi Athena.",
+              "highlight": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 15,
+      "start": 93.55,
+      "end": 99.19,
+      "duration": 5.64,
+      "on_screen_text": "Pesta Semalaman",
+      "motion": "pan_left",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#F59E0B",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [
+            0.4,
+            0.1,
+            5.8
+          ],
+          "to": [
+            -0.4,
+            0.1,
+            5.8
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "stickman_scene": {
+          "composition": "Alun-alun kota Troya 2D frontal dengan Kuda Troya di tengah dikelilingi obor perayaan dan cawan pesta.",
+          "characters": "Warga dan prajurit stickman Troya berhelm jambul emas (#F59E0B) menarik tali tambang memasukkan kuda ke kota lalu menari mengangkat cawan.",
+          "action": "Warga Troya berpesta pora merayakan kemenangan hingga kelelahan dan tertidur lelap."
+        },
+        "data": {
+          "autoRotateSpeed": -0.015,
+          "cards": [
+            {
+              "label": "EUFORIA KEMENANGAN",
+              "title": "Jebakan Masuk ke Jantung Kota",
+              "value": "Kewaspadaan Runtuh",
+              "subtitle": "Warga Troya menarik kuda kayu melewati gerbang dan merayakan akhir perang semalaman.",
+              "highlight": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 16,
+      "start": 99.19,
+      "end": 107.03,
+      "duration": 7.84,
+      "on_screen_text": "Infiltrasi Tengah Malam",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#EF4444",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [
+            0,
+            0.1,
+            6.2
+          ],
+          "to": [
+            0,
+            0.1,
+            5.3
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "stickman_scene": {
+          "composition": "Adegan malam gelap 2D frontal di gerbang dalam Troya dengan bulan sabit di atas dan palka perut kuda terbuka.",
+          "characters": "Prajurit elit stickman Yunani berhelm jambul merah (#EF4444) turun menggunakan tali dari perut kuda, sementara penjaga stickman Troya (#F59E0B) tertidur di pos.",
+          "action": "Pasukan stickman Yunani melumpuhkan penjaga secara senyap lalu mengangkat palang kayu gerbang utama."
+        },
+        "data": {
+          "autoRotateSpeed": 0.015,
+          "cards": [
+            {
+              "label": "OPERASI TENGAH MALAM",
+              "title": "Pasukan Elit Keluar dari Kuda",
+              "value": "Gerbang Dibuka",
+              "subtitle": "Penjaga dilumpuhkan dan pintu utama Troya dibuka bagi armada Yunani yang kembali.",
+              "highlight": true
+            },
+            {
+              "label": "PERTAHANAN DALAM",
+              "title": "Penjaga Troya Lengah",
+              "value": "Lumpuh Total",
+              "subtitle": "Kelelahan pascapesta membuat pasukan jaga tidak sempat membunyikan tanda bahaya.",
+              "highlight": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 17,
+      "start": 107.03,
+      "end": 111.45,
+      "duration": 4.42,
+      "on_screen_text": "Troya Dibakar Habis",
+      "motion": "zoom_out",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#EF4444",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [
+            0,
+            0.1,
+            5.3
+          ],
+          "to": [
+            0,
+            0.1,
+            6.2
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "stickman_scene": {
+          "composition": "Siluet kota Troya 2D frontal dilalap kobaran api merah menyala dan asap hitam membubung tinggi.",
+          "characters": "Pasukan stickman Yunani berjambul merah (#EF4444) menyerbu masuk lewat gerbang terbuka membawa obor menyala.",
+          "action": "Dalam hitungan jam, menara dan bangunan batu Troya runtuh terbakar rata dengan tanah."
+        },
+        "data": {
+          "autoRotateSpeed": -0.015,
+          "cards": [
+            {
+              "label": "AKHIR PERANG TROYA",
+              "title": "Kota Megah Rata dengan Tanah",
+              "value": "Dalam Hitungan Jam",
+              "subtitle": "Serbuan mendadak dari dalam menghancurkan kerajaan yang bertahan selama 10 tahun.",
+              "highlight": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 18,
+      "start": 111.45,
+      "end": 116.4,
+      "duration": 4.95,
+      "on_screen_text": "Epik Iliad Homeros",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "paper-flip-stage",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#38BDF8",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [
+            0,
+            0.1,
+            6.2
+          ],
+          "to": [
+            0,
+            0.1,
+            5.3
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "stickman_scene": {
+          "composition": "Panggung lembaran gulungan papirus 2D frontal menampilkan penyair Yunani kuno membacakan syair.",
+          "characters": "Stickman penyair Homeros memegang gulungan naskah epik di depan siluet bayangan prajurit Yunani (#EF4444) dan Troya (#F59E0B).",
+          "action": "Homeros membacakan kisah epik Iliad yang selama berabad-abad dianggap sekadar mitos sastra."
+        },
+        "data": {
+          "autoRotateSpeed": 0.012,
+          "cards": [
+            {
+              "label": "ARSIP SASTRA KUNO",
+              "title": "Epik Iliad Karya Homeros",
+              "value": "Dianggap Dongeng",
+              "subtitle": "Selama berabad-abad sejarawan menduga kisah Perang Troya hanyalah legenda mitologi.",
+              "highlight": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 19,
+      "start": 116.4,
+      "end": 126.46,
+      "duration": 10.06,
+      "on_screen_text": "Bukti Arkeologi Hisarlik",
+      "motion": "zoom_in",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "paper-flip-stage",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#38BDF8",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [
+            0,
+            0.1,
+            6.2
+          ],
+          "to": [
+            0,
+            0.1,
+            5.3
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "stickman_scene": {
+          "composition": "Penampang galian arkeologi 2D frontal di bukit Hisarlik, Turki yang menyingkap lapisan fondasi benteng batu dan abu arang.",
+          "characters": "Dua stickman arkeolog bertopi lapangan menggali lapisan tanah menggunakan sekop dan kuas di samping reruntuhan tembok Zaman Perunggu.",
+          "action": "Stickman arkeolog menemukan fondasi tembok benteng kuno beserta lapisan abu bekas kebakaran hebat."
+        },
+        "data": {
+          "autoRotateSpeed": -0.012,
+          "cards": [
+            {
+              "label": "EKSKAVASI HISARLIK, TURKI",
+              "title": "Reruntuhan Benteng Asli Ditemukan",
+              "value": "Bukti Zaman Perunggu",
+              "subtitle": "Penggalian arkeologis mengungkap struktur kota benteng dan jejak kebakaran besar.",
+              "highlight": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 20,
+      "start": 126.46,
+      "end": 134.4,
+      "duration": 7.94,
+      "on_screen_text": "Runtuh Dari Dalam",
+      "motion": "zoom_out",
+      "transition": "fade",
+      "visual": {
+        "type": "three",
+        "preset": "floating-cards",
+        "colors": {
+          "background": "#0F172A",
+          "accent": "#10B981",
+          "text": "#F8FAFC",
+          "secondary": "#94A3B8",
+          "surface": "#1E293B"
+        },
+        "camera": {
+          "from": [
+            0,
+            0.1,
+            5.3
+          ],
+          "to": [
+            0,
+            0.1,
+            6.2
+          ],
+          "fov": 40,
+          "lookAt": [
+            0,
+            0.1,
+            0
+          ]
+        },
+        "stickman_scene": {
+          "composition": "Visual simbolis 2D frontal menampilkan benteng batu kokoh dengan retakan cahaya hijau zamrud (#10B981) yang muncul dari bagian dalam gerbang.",
+          "characters": "Satu stickman penjaga berdiri di dalam gerbang yang terbuka sendiri sementara tembok luar tetap utuh tanpa goresan.",
+          "action": "Benteng kokoh perlahan terbelah dari sisi dalam, menegaskan pesan abadi sejarah Troya."
+        },
+        "data": {
+          "autoRotateSpeed": 0.01,
+          "cards": [
+            {
+              "label": "PELAJARAN ABADI SEJARAH",
+              "title": "Benteng Terkuat Runtuh dari Dalam",
+              "value": "Waspada Kelengahan",
+              "subtitle": "Pertahanan luar yang mustahil ditembus dapat hancur ketika gerbang dibuka sendiri.",
+              "highlight": true
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
+
+
+```
+
+{
+"version": "storyV2",
+"title": "Kuda Troya dan Sejarah Perang Troya yang Terkenal",
+"width": 1080,
+"height": 1920,
+"fps": 30,
+"duration": 134.4,
+"audioPath": "audio/audio.mp3",
+"transcriptPath": "audio/transcript.srt",
+"style": {
+"animationStyle": "2D Stickman Animation",
+"description": "Ilustrasi edukasi sejarah 2D minimalis bergaya stickman dengan garis tinta tegas, kepala bulat ekspresif tanpa detail wajah rumit, pose tubuh dinamis, serta properti ikonik Zaman Perunggu.",
+"factions": {
+"greek": {
+"name": "Yunani (Mikenai/Sparta)",
+"helmetCrestColor": "#EF4444",
+"equipment": "Helm Korintus berjambul merah, perisai bundar hoplon, dan tombak perunggu"
+},
+"trojan": {
+"name": "Troya",
+"helmetCrestColor": "#F59E0B",
+"equipment": "Helm perunggu berjambul emas, perisai perunggu, dan busur panah di atas tembok benteng"
+}
+}
+},
+"scenes": [
+{
+"id": 1,
+"start": 0.0,
+"end": 7.8,
+"duration": 7.8,
+"on_screen_text": "10 Tahun Pengepungan",
+"motion": "zoom_in",
+"transition": "fade",
+"visual": {
+"type": "three",
+"preset": "isometric-blocks",
+"colors": {
+"background": "#0F172A",
+"accent": "#F59E0B",
+"text": "#F8FAFC",
+"secondary": "#94A3B8",
+"surface": "#1E293B"
+},
+"camera": {
+"from": [0, 0.1, 6.2],
+"to": [0, 0.1, 5.3],
+"fov": 40,
+"lookAt": [0, 0.1, 0]
+},
+"stickman_scene": {
+"composition": "Bidang datar frontal 2D menampilkan tembok batu Troya yang menjulang di sisi kanan dan barisan prajurit stickman Yunani mengepung dari sisi kiri.",
+"characters": "Prajurit stickman Yunani berhelm Korintus jambul merah (#EF4444) memegang tombak dan perisai bundar berhadapan dengan pemanah stickman Troya berhelm jambul emas (#F59E0B) di puncak tembok.",
+"action": "Pasukan stickman Yunani berulang kali menggempur kaki tembok Troya, namun terpukul mundur oleh hujan panah dari menara benteng."
+},
+"data": {
+"autoRotateSpeed": 0.015,
+"blocks": [
+{
+"label": "Durasi Pengepungan",
+"value": 10,
+"displayValue": "10 Tahun",
+"highlight": true
+},
+{
+"label": "Korban Prajurit",
+"value": 8,
+"displayValue": "Puluhan Ribu",
+"highlight": false
+},
+{
+"label": "Tembok Ditembus",
+"value": 0,
+"displayValue": "0 Kali",
+"highlight": false
+}
+]
+}
+}
+},
+{
+"id": 2,
+"start": 7.8,
+"end": 17.1,
+"duration": 9.3,
+"on_screen_text": "Satu Kebohongan Besar",
+"motion": "zoom_out",
+"transition": "fade",
+"visual": {
+"type": "three",
+"preset": "floating-cards",
+"colors": {
+"background": "#0F172A",
+"accent": "#F59E0B",
+"text": "#F8FAFC",
+"secondary": "#94A3B8",
+"surface": "#1E293B"
+},
+"camera": {
+"from": [0, 0.1, 5.3],
+"to": [0, 0.1, 6.2],
+"fov": 40,
+"lookAt": [0, 0.1, 0]
+},
+"stickman_scene": {
+"composition": "Tampilan frontal 2D dengan siluet raksasa Kuda Kayu Troya di tengah layar dan gerbang kota yang perlahan terbuka.",
+"characters": "Satu stickman arsitek Yunani berhelm jambul merah (#EF4444) menunjuk cetak biru kuda kayu, sementara stickman penjaga Troya berhelm jambul emas (#F59E0B) mengamati dengan heran.",
+"action": "Stickman Yunani membisikkan rencana tipu daya di balik bayangan patung kuda kayu raksasa."
+},
+"data": {
+"autoRotateSpeed": -0.015,
+"cards": [
+{
+"label": "TITIK BALIK SEJARAH",
+"title": "Bukan Kekuatan Senjata",
+"value": "Tipu Daya",
+"subtitle": "Benteng terkuat Zaman Perunggu runtuh akibat muslihat perang psikologis.",
+"highlight": true
+}
+]
+}
+}
+},
+{
+"id": 3,
+"start": 17.1,
+"end": 27.3,
+"duration": 10.2,
+"on_screen_text": "Abad ke-12 SM",
+"motion": "pan_right",
+"transition": "fade",
+"visual": {
+"type": "three",
+"preset": "floating-cards",
+"colors": {
+"background": "#0F172A",
+"accent": "#F59E0B",
+"text": "#F8FAFC",
+"secondary": "#94A3B8",
+"surface": "#1E293B"
+},
+"camera": {
+"from": [-0.4, 0.1, 5.8],
+"to": [0.4, 0.1, 5.8],
+"fov": 40,
+"lookAt": [0, 0.1, 0]
+},
+"stickman_scene": {
+"composition": "Panel datar 2D menampilkan dermaga Sparta dengan kapal dayung Zaman Perunggu siap berlayar ke arah timur.",
+"characters": "Stickman Pangeran Paris berhelm jambul emas (#F59E0B) menggandeng stickman Helen berlari cepat menuju kapal layar Troya.",
+"action": "Paris dan Helen melompat ke atas kapal dayung Troya dan berlayar meninggalkan pesisir Sparta."
+},
+"data": {
+"autoRotateSpeed": 0.012,
+"cards": [
+{
+"label": "PEMICU KONFLIK • ABAD KE-12 SM",
+"title": "Pelarian Paris & Helen",
+"value": "Sparta ke Troya",
+"subtitle": "Pangeran Paris membawa kabur Ratu Helen melintasi Laut Aegea.",
+"highlight": true
+}
+]
+}
+}
+},
+{
+"id": 4,
+"start": 27.3,
+"end": 33.06,
+"duration": 5.76,
+"on_screen_text": "Penghinaan Politik Yunani",
+"motion": "zoom_in",
+"transition": "fade",
+"visual": {
+"type": "three",
+"preset": "network-nodes",
+"colors": {
+"background": "#0F172A",
+"accent": "#F59E0B",
+"text": "#F8FAFC",
+"secondary": "#94A3B8",
+"surface": "#1E293B"
+},
+"camera": {
+"from": [0, 0.1, 6.2],
+"to": [0, 0.1, 5.3],
+"fov": 40,
+"lookAt": [0, 0.1, 0]
+},
+"stickman_scene": {
+"composition": "Diagram jaringan 2D frontal yang menghubungkan empat figur stickman kerajaan Zaman Perunggu.",
+"characters": "Stickman Helen di pusat, terhubung ke stickman Raja Menelaus dan Raja Agamemnon berjambul merah (#EF4444) serta Pangeran Paris berjambul emas (#F59E0B).",
+"action": "Stickman Menelaus mengepalkan tangan penuh amarah dan menyerahkan tongkat komando kepada kakaknya, Agamemnon."
+},
+"data": {
+"autoRotateSpeed": 0.015,
+"nodes": [
+{
+"id": "helen",
+"label": "Helen dari Sparta",
+"sublabel": "Pusat krisis diplomatik",
+"size": 1.25,
+"highlight": true
+},
+{
+"id": "menelaus",
+"label": "Raja Menelaus",
+"sublabel": "Penguasa Sparta yang terhina",
+"size": 0.95,
+"highlight": false
+},
+{
+"id": "agamemnon",
+"label": "Raja Agamemnon",
+"sublabel": "Panglima koalisi Mikenai",
+"size": 0.95,
+"highlight": false
+},
+{
+"id": "paris",
+"label": "Pangeran Paris",
+"sublabel": "Pewaris kerajaan Troya",
+"size": 0.95,
+"highlight": false
+}
+]
+}
+}
+},
+{
+"id": 5,
+"start": 33.06,
+"end": 42.17,
+"duration": 9.11,
+"on_screen_text": "1.000 Kapal Perang",
+"motion": "zoom_in",
+"transition": "fade",
+"visual": {
+"type": "three",
+"preset": "isometric-blocks",
+"colors": {
+"background": "#0F172A",
+"accent": "#EF4444",
+"text": "#F8FAFC",
+"secondary": "#94A3B8",
+"surface": "#1E293B"
+},
+"camera": {
+"from": [0, 0.1, 6.2],
+"to": [0, 0.1, 5.3],
+"fov": 40,
+"lookAt": [0, 0.1, 0]
+},
+"stickman_scene": {
+"composition": "Panorama 2D frontal Laut Aegea dipenuhi armada kapal dayung Yunani yang mendarat di pantai Troya.",
+"characters": "Stickman Raja Agamemnon berdiri di haluan kapal utama dengan helm Korintus jambul merah (#EF4444) mengacungkan tombak ke arah pantai Troya.",
+"action": "Ratusan prajurit stickman Yunani melompat turun dari kapal dayung ke pesisir pantai dan membentuk barisan perisai."
+},
+"data": {
+"autoRotateSpeed": -0.015,
+"blocks": [
+{
+"label": "Armada Kapal Yunani",
+"value": 1000,
+"displayValue": "1.000+ Kapal",
+"highlight": true
+},
+{
+"label": "Lintas Laut Aegea",
+"value": 650,
+"displayValue": "Invasi Pesisir",
+"highlight": false
+},
+{
+"label": "Koalisi Kota Yunani",
+"value": 450,
+"displayValue": "Pasukan Gabungan",
+"highlight": false
+}
+]
+}
+}
+},
+{
+"id": 6,
+"start": 42.17,
+"end": 47.9,
+"duration": 5.73,
+"on_screen_text": "Tembok Batu Troya",
+"motion": "zoom_out",
+"transition": "fade",
+"visual": {
+"type": "three",
+"preset": "floating-cards",
+"colors": {
+"background": "#0F172A",
+"accent": "#F59E0B",
+"text": "#F8FAFC",
+"secondary": "#94A3B8",
+"surface": "#1E293B"
+},
+"camera": {
+"from": [0, 0.1, 5.3],
+"to": [0, 0.1, 6.2],
+"fov": 40,
+"lookAt": [0, 0.1, 0]
+},
+"stickman_scene": {
+"composition": "Tampilan vertikal 2D frontal yang menonjolkan tinggi menjulang tembok batu raksasa Troya dari dasar hingga menara jaga.",
+"characters": "Prajurit stickman Troya berhelm jambul emas (#F59E0B) mendorong batu besar dan membidikkan panah dari atas dinding batu tebal ke arah stickman Yunani (#EF4444) di bawah.",
+"action": "Tangga kepung pasukan stickman Yunani patah dan jatuh saat menghantam dinding batu raksasa Troya."
+},
+"data": {
+"autoRotateSpeed": 0.012,
+"cards": [
+{
+"label": "PERTAHANAN LEGENDARIS",
+"title": "Benteng Batu Raksasa Troya",
+"value": "Tak Tertembus",
+"subtitle": "Dinding batu miring dan menara pengawas mematahkan setiap serbuan frontal.",
+"highlight": true
+}
+]
+}
+}
+},
+{
+"id": 7,
+"start": 47.9,
+"end": 52.87,
+"duration": 4.97,
+"on_screen_text": "Perang Atrisi",
+"motion": "pan_left",
+"transition": "fade",
+"visual": {
+"type": "three",
+"preset": "isometric-blocks",
+"colors": {
+"background": "#0F172A",
+"accent": "#F59E0B",
+"text": "#F8FAFC",
+"secondary": "#94A3B8",
+"surface": "#1E293B"
+},
+"camera": {
+"from": [0.4, 0.1, 5.8],
+"to": [-0.4, 0.1, 5.8],
+"fov": 40,
+"lookAt": [0, 0.1, 0]
+},
+"stickman_scene": {
+"composition": "Medan datar 2D terbagi dua seimbang antara kamp tenda Yunani di kiri dan tembok kota Troya di kanan.",
+"characters": "Barisan stickman Yunani (#EF4444) dan stickman Troya (#F59E0B) saling berhadapan dengan perisai terangkat dalam kebuntuan panjang.",
+"action": "Kedua pasukan stickman maju dan mundur berulang kali tanpa ada yang mampu merebut wilayah lawan."
+},
+"data": {
+"autoRotateSpeed": -0.012,
+"blocks": [
+{
+"label": "Kekuatan Yunani",
+"value": 50,
+"displayValue": "Dominan di Laut",
+"highlight": false
+},
+{
+"label": "Pertahanan Troya",
+"value": 50,
+"displayValue": "Kokoh di Benteng",
+"highlight": false
+},
+{
+"label": "Hasil 10 Tahun",
+"value": 100,
+"displayValue": "Imbang Tanpa Pemenang",
+"highlight": true
+}
+]
+}
+}
+},
+{
+"id": 8,
+"start": 52.87,
+"end": 58.4,
+"duration": 5.53,
+"on_screen_text": "Prajurit Terhebat Yunani",
+"motion": "zoom_in",
+"transition": "fade",
+"visual": {
+"type": "three",
+"preset": "floating-cards",
+"colors": {
+"background": "#0F172A",
+"accent": "#EF4444",
+"text": "#F8FAFC",
+"secondary": "#94A3B8",
+"surface": "#1E293B"
+},
+"camera": {
+"from": [0, 0.1, 6.2],
+"to": [0, 0.1, 5.3],
+"fov": 40,
+"lookAt": [0, 0.1, 0]
+},
+"stickman_scene": {
+"composition": "Fokus frontal 2D pada sosok heroik stickman Achilles di tengah medan tempur dengan efek garis kilat kecepatan.",
+"characters": "Stickman Achilles mengenakan helm Korintus berjambul merah terang (#EF4444), perisai bundar perunggu berkilau, dan tombak panjang.",
+"action": "Achilles melesat maju menangkis serbuan tombak lawan dengan gerakan lincah dan presisi mematikan."
+},
+"data": {
+"autoRotateSpeed": 0.015,
+"cards": [
+{
+"label": "Ujung Tombak Yunani",
+"title": "Achilles dari Myrmidon",
+"value": "Hampir Tak Terkalahkan",
+"subtitle": "Kecepatan dan ketangguhannya menjadi mimpi buruk bagi barisan depan Troya.",
+"highlight": true
+}
+]
+}
+}
+},
+{
+"id": 9,
+"start": 58.4,
+"end": 63.38,
+"duration": 4.98,
+"on_screen_text": "Benteng Terakhir Troya",
+"motion": "zoom_in",
+"transition": "fade",
+"visual": {
+"type": "three",
+"preset": "floating-cards",
+"colors": {
+"background": "#0F172A",
+"accent": "#F59E0B",
+"text": "#F8FAFC",
+"secondary": "#94A3B8",
+"surface": "#1E293B"
+},
+"camera": {
+"from": [0, 0.1, 6.2],
+"to": [0, 0.1, 5.3],
+"fov": 40,
+"lookAt": [0, 0.1, 0]
+},
+"stickman_scene": {
+"composition": "Fokus frontal 2D pada sosok stickman Pangeran Hector berdiri gagah di depan gerbang utama Troya.",
+"characters": "Stickman Pangeran Hector berhelm perunggu jambul emas (#F59E0B) mengangkat perisai besar dan tombak di depan pasukannya.",
+"action": "Hector mengetukkan tombak ke perisainya untuk membakar semangat prajurit Troya yang bertahan."
+},
+"data": {
+"autoRotateSpeed": -0.015,
+"cards": [
+{
+"label": "PELINDUNG KOTA TROYA",
+"title": "Pangeran Hector",
+"value": "Komandan Utama",
+"subtitle": "Tumpuan terakhir Troya yang menjaga moral pasukan dan gerbang kota tetap utuh.",
+"highlight": true
+}
+]
+}
+}
+},
+{
+"id": 10,
+"start": 63.38,
+"end": 68.42,
+"duration": 5.04,
+"on_screen_text": "Duel Achilles vs Hector",
+"motion": "zoom_in",
+"transition": "fade",
+"visual": {
+"type": "three",
+"preset": "floating-cards",
+"colors": {
+"background": "#0F172A",
+"accent": "#EF4444",
+"text": "#F8FAFC",
+"secondary": "#94A3B8",
+"surface": "#1E293B"
+},
+"camera": {
+"from": [0, 0.1, 6.2],
+"to": [0, 0.1, 5.3],
+"fov": 40,
+"lookAt": [0, 0.1, 0]
+},
+"stickman_scene": {
+"composition": "Duel satu lawan satu 2D frontal di dataran terbuka depan gerbang Troya dengan percikan benturan senjata.",
+"characters": "Stickman Achilles berjambul merah (#EF4444) beradu tombak dan perisai langsung melawan stickman Hector berjambul emas (#F59E0B).",
+"action": "Setelah benturan tombak sengit, Achilles melancarkan tusukan penentu yang menjatuhkan Hector ke tanah."
+},
+"data": {
+"autoRotateSpeed": 0.015,
+"cards": [
+{
+"label": "FAKSI YUNANI",
+"title": "Achilles",
+"value": "Pemenang Duel",
+"subtitle": "Menumbangkan panglima tertinggi Troya dalam pertarungan satu lawan satu.",
+"highlight": true
+},
+{
+"label": "FAKSI TROYA",
+"title": "Pangeran Hector",
+"value": "Gugur di Medan Laga",
+"subtitle": "Bertarung hingga titik darah penghabisan demi melindungi negerinya.",
+"highlight": false
+}
+]
+}
+}
+},
+{
+"id": 11,
+"start": 68.42,
+"end": 73.8,
+"duration": 5.38,
+"on_screen_text": "Gerbang Tetap Terkunci",
+"motion": "zoom_out",
+"transition": "fade",
+"visual": {
+"type": "three",
+"preset": "floating-cards",
+"colors": {
+"background": "#0F172A",
+"accent": "#F59E0B",
+"text": "#F8FAFC",
+"secondary": "#94A3B8",
+"surface": "#1E293B"
+},
+"camera": {
+"from": [0, 0.1, 5.3],
+"to": [0, 0.1, 6.2],
+"fov": 40,
+"lookAt": [0, 0.1, 0]
+},
+"stickman_scene": {
+"composition": "Bidang frontal 2D menyorot palang kayu raksasa yang mengunci gerbang perunggu Troya dari sisi dalam.",
+"characters": "Prajurit stickman Troya berjambul emas (#F59E0B) berjaga rapat di balik gerbang sementara stickman Yunani (#EF4444) tertahan di luar.",
+"action": "Gerbang kota menutup rapat dengan palang besi dan kayu raksasa, menggagalkan upaya Yunani menerobos masuk."
+},
+"data": {
+"autoRotateSpeed": -0.012,
+"cards": [
+{
+"label": "KEBUNTUAN TAKTIS",
+"title": "Hector Gugur, Troya Bertahan",
+"value": "Gerbang Terkunci",
+"subtitle": "Kematian sang pangeran tidak serta-merta meruntuhkan pertahanan fisik kota.",
+"highlight": true
+}
+]
+}
+}
+},
+{
+"id": 12,
+"start": 73.8,
+"end": 80.68,
+"duration": 6.88,
+"on_screen_text": "Taktik Psikologis Odysseus",
+"motion": "zoom_in",
+"transition": "fade",
+"visual": {
+"type": "three",
+"preset": "network-nodes",
+"colors": {
+"background": "#0F172A",
+"accent": "#38BDF8",
+"text": "#F8FAFC",
+"secondary": "#94A3B8",
+"surface": "#1E293B"
+},
+"camera": {
+"from": [0, 0.1, 6.2],
+"to": [0, 0.1, 5.3],
+"fov": 40,
+"lookAt": [0, 0.1, 0]
+},
+"stickman_scene": {
+"composition": "Diagram alur strategi 2D frontal dengan stickman Odysseus di pusat dan sketsa rencana Kuda Kayu.",
+"characters": "Stickman Odysseus berhelm Korintus jambul merah (#EF4444) mengetuk pelipis kepalanya sambil menunjuk skema taktik kepada para komandan Yunani.",
+"action": "Odysseus memaparkan empat tahap muslihat: mundur palsu, umpan persembahan, euforia lawan, dan penyusupan malam."
+},
+"data": {
+"autoRotateSpeed": 0.015,
+"nodes": [
+{
+"id": "odysseus",
+"label": "Strategi Odysseus",
+"sublabel": "Perang psikologis pengganti serbuan frontal",
+"size": 1.25,
+"highlight": true
+},
+{
+"id": "retreat",
+"label": "1. Mundur Palsu",
+"sublabel": "Bakar kamp dan sembunyikan armada",
+"size": 0.95,
+"highlight": false
+},
+{
+"id": "trojan_horse",
+"label": "2. Kuda Kayu Raksasa",
+"sublabel": "Umpan persembahan untuk Dewi Athena",
+"size": 0.95,
+"highlight": false
+},
+{
+"id": "night_raid",
+"label": "3. Serangan Tengah Malam",
+"sublabel": "Buka gerbang utama dari dalam",
+"size": 0.95,
+"highlight": false
+}
+]
+}
+}
+},
+{
+"id": 13,
+"start": 80.68,
+"end": 86.08,
+"duration": 5.4,
+"on_screen_text": "Pura-Pura Menyerah",
+"motion": "pan_right",
+"transition": "fade",
+"visual": {
+"type": "three",
+"preset": "floating-cards",
+"colors": {
+"background": "#0F172A",
+"accent": "#38BDF8",
+"text": "#F8FAFC",
+"secondary": "#94A3B8",
+"surface": "#1E293B"
+},
+"camera": {
+"from": [-0.4, 0.1, 5.8],
+"to": [0.4, 0.1, 5.8],
+"fov": 40,
+"lookAt": [0, 0.1, 0]
+},
+"stickman_scene": {
+"composition": "Pesisir pantai Troya 2D frontal dengan kepulan asap dari tenda-tenda Yunani yang terbakar dan kapal menjauh ke cakrawala.",
+"characters": "Pasukan stickman Yunani berhelm jambul merah (#EF4444) mendayung kapal menjauh, sementara pengintai stickman Troya (#F59E0B) mengintip dari menara.",
+"action": "Pasukan Yunani membakar kemah mereka sendiri lalu berlayar bersembunyi di balik pulau terdekat."
+},
+"data": {
+"autoRotateSpeed": -0.015,
+"cards": [
+{
+"label": "SANDIWARA PERANG",
+"title": "Mundur Palsu Pasukan Yunani",
+"value": "Pantai Kosong",
+"subtitle": "Kamp dibakar dan armada berlayar pergi untuk meyakinkan Troya bahwa perang usai.",
+"highlight": true
+}
+]
+}
+}
+},
+{
+"id": 14,
+"start": 86.08,
+"end": 93.55,
+"duration": 7.47,
+"on_screen_text": "Kuda Kayu Raksasa",
+"motion": "zoom_in",
+"transition": "fade",
+"visual": {
+"type": "three",
+"preset": "floating-cards",
+"colors": {
+"background": "#0F172A",
+"accent": "#F59E0B",
+"text": "#F8FAFC",
+"secondary": "#94A3B8",
+"surface": "#1E293B"
+},
+"camera": {
+"from": [0, 0.1, 6.2],
+"to": [0, 0.1, 5.3],
+"fov": 40,
+"lookAt": [0, 0.1, 0]
+},
+"stickman_scene": {
+"composition": "Bidang frontal 2D memperlihatkan patung Kuda Troya kayu raksasa beroda berdiri tepat di depan gerbang kota dengan tampilan irisan rongga perut tersembunyi.",
+"characters": "Di dalam perut kuda, puluhan prajurit elit stickman Yunani berjambul merah (#EF4444) berjongkok senyap; di luar, stickman Troya (#F59E0B) mengamati dengan takjub.",
+"action": "Prajurit stickman Yunani menutup palka kayu di perut kuda dan menahan napas dalam diam."
+},
+"data": {
+"autoRotateSpeed": 0.015,
+"cards": [
+{
+"label": "UMPAN DEWI ATHENA",
+"title": "Patung Kuda Kayu Raksasa",
+"value": "Persembahan Palsu",
+"subtitle": "Dirancang sebagai simbol penyerahan diri sekaligus persembahan suci bagi Dewi Athena.",
+"highlight": true
+}
+]
+}
+}
+},
+{
+"id": 15,
+"start": 93.55,
+"end": 99.19,
+"duration": 5.64,
+"on_screen_text": "Pesta Semalaman",
+"motion": "pan_left",
+"transition": "fade",
+"visual": {
+"type": "three",
+"preset": "floating-cards",
+"colors": {
+"background": "#0F172A",
+"accent": "#F59E0B",
+"text": "#F8FAFC",
+"secondary": "#94A3B8",
+"surface": "#1E293B"
+},
+"camera": {
+"from": [0.4, 0.1, 5.8],
+"to": [-0.4, 0.1, 5.8],
+"fov": 40,
+"lookAt": [0, 0.1, 0]
+},
+"stickman_scene": {
+"composition": "Alun-alun kota Troya 2D frontal dengan Kuda Troya di tengah dikelilingi obor perayaan dan cawan pesta.",
+"characters": "Warga dan prajurit stickman Troya berhelm jambul emas (#F59E0B) menarik tali tambang memasukkan kuda ke kota lalu menari mengangkat cawan.",
+"action": "Warga Troya berpesta pora merayakan kemenangan hingga kelelahan dan tertidur lelap."
+},
+"data": {
+"autoRotateSpeed": -0.015,
+"cards": [
+{
+"label": "EUFORIA KEMENANGAN",
+"title": "Jebakan Masuk ke Jantung Kota",
+"value": "Kewaspadaan Runtuh",
+"subtitle": "Warga Troya menarik kuda kayu melewati gerbang dan merayakan akhir perang semalaman.",
+"highlight": true
+}
+]
+}
+}
+},
+{
+"id": 16,
+"start": 99.19,
+"end": 107.03,
+"duration": 7.84,
+"on_screen_text": "Infiltrasi Tengah Malam",
+"motion": "zoom_in",
+"transition": "fade",
+"visual": {
+"type": "three",
+"preset": "floating-cards",
+"colors": {
+"background": "#0F172A",
+"accent": "#EF4444",
+"text": "#F8FAFC",
+"secondary": "#94A3B8",
+"surface": "#1E293B"
+},
+"camera": {
+"from": [0, 0.1, 6.2],
+"to": [0, 0.1, 5.3],
+"fov": 40,
+"lookAt": [0, 0.1, 0]
+},
+"stickman_scene": {
+"composition": "Adegan malam gelap 2D frontal di gerbang dalam Troya dengan bulan sabit di atas dan palka perut kuda terbuka.",
+"characters": "Prajurit elit stickman Yunani berhelm jambul merah (#EF4444) turun menggunakan tali dari perut kuda, sementara penjaga stickman Troya (#F59E0B) tertidur di pos.",
+"action": "Pasukan stickman Yunani melumpuhkan penjaga secara senyap lalu mengangkat palang kayu gerbang utama."
+},
+"data": {
+"autoRotateSpeed": 0.015,
+"cards": [
+{
+"label": "OPERASI TENGAH MALAM",
+"title": "Pasukan Elit Keluar dari Kuda",
+"value": "Gerbang Dibuka",
+"subtitle": "Penjaga dilumpuhkan dan pintu utama Troya dibuka bagi armada Yunani yang kembali.",
+"highlight": true
+},
+{
+"label": "PERTAHANAN DALAM",
+"title": "Penjaga Troya Lengah",
+"value": "Lumpuh Total",
+"subtitle": "Kelelahan pascapesta membuat pasukan jaga tidak sempat membunyikan tanda bahaya.",
+"highlight": false
+}
+]
+}
+}
+},
+{
+"id": 17,
+"start": 107.03,
+"end": 111.45,
+"duration": 4.42,
+"on_screen_text": "Troya Dibakar Habis",
+"motion": "zoom_out",
+"transition": "fade",
+"visual": {
+"type": "three",
+"preset": "floating-cards",
+"colors": {
+"background": "#0F172A",
+"accent": "#EF4444",
+"text": "#F8FAFC",
+"secondary": "#94A3B8",
+"surface": "#1E293B"
+},
+"camera": {
+"from": [0, 0.1, 5.3],
+"to": [0, 0.1, 6.2],
+"fov": 40,
+"lookAt": [0, 0.1, 0]
+},
+"stickman_scene": {
+"composition": "Siluet kota Troya 2D frontal dilalap kobaran api merah menyala dan asap hitam membubung tinggi.",
+"characters": "Pasukan stickman Yunani berjambul merah (#EF4444) menyerbu masuk lewat gerbang terbuka membawa obor menyala.",
+"action": "Dalam hitungan jam, menara dan bangunan batu Troya runtuh terbakar rata dengan tanah."
+},
+"data": {
+"autoRotateSpeed": -0.015,
+"cards": [
+{
+"label": "AKHIR PERANG TROYA",
+"title": "Kota Megah Rata dengan Tanah",
+"value": "Dalam Hitungan Jam",
+"subtitle": "Serbuan mendadak dari dalam menghancurkan kerajaan yang bertahan selama 10 tahun.",
+"highlight": true
+}
+]
+}
+}
+},
+{
+"id": 18,
+"start": 111.45,
+"end": 116.4,
+"duration": 4.95,
+"on_screen_text": "Epik Iliad Homeros",
+"motion": "zoom_in",
+"transition": "fade",
+"visual": {
+"type": "three",
+"preset": "paper-flip-stage",
+"colors": {
+"background": "#0F172A",
+"accent": "#38BDF8",
+"text": "#F8FAFC",
+"secondary": "#94A3B8",
+"surface": "#1E293B"
+},
+"camera": {
+"from": [0, 0.1, 6.2],
+"to": [0, 0.1, 5.3],
+"fov": 40,
+"lookAt": [0, 0.1, 0]
+},
+"stickman_scene": {
+"composition": "Panggung lembaran gulungan papirus 2D frontal menampilkan penyair Yunani kuno membacakan syair.",
+"characters": "Stickman penyair Homeros memegang gulungan naskah epik di depan siluet bayangan prajurit Yunani (#EF4444) dan Troya (#F59E0B).",
+"action": "Homeros membacakan kisah epik Iliad yang selama berabad-abad dianggap sekadar mitos sastra."
+},
+"data": {
+"autoRotateSpeed": 0.012,
+"cards": [
+{
+"label": "ARSIP SASTRA KUNO",
+"title": "Epik Iliad Karya Homeros",
+"value": "Dianggap Dongeng",
+"subtitle": "Selama berabad-abad sejarawan menduga kisah Perang Troya hanyalah legenda mitologi.",
+"highlight": true
+}
+]
+}
+}
+},
+{
+"id": 19,
+"start": 116.4,
+"end": 126.46,
+"duration": 10.06,
+"on_screen_text": "Bukti Arkeologi Hisarlik",
+"motion": "zoom_in",
+"transition": "fade",
+"visual": {
+"type": "three",
+"preset": "paper-flip-stage",
+"colors": {
+"background": "#0F172A",
+"accent": "#38BDF8",
+"text": "#F8FAFC",
+"secondary": "#94A3B8",
+"surface": "#1E293B"
+},
+"camera": {
+"from": [0, 0.1, 6.2],
+"to": [0, 0.1, 5.3],
+"fov": 40,
+"lookAt": [0, 0.1, 0]
+},
+"stickman_scene": {
+"composition": "Penampang galian arkeologi 2D frontal di bukit Hisarlik, Turki yang menyingkap lapisan fondasi benteng batu dan abu arang.",
+"characters": "Dua stickman arkeolog bertopi lapangan menggali lapisan tanah menggunakan sekop dan kuas di samping reruntuhan tembok Zaman Perunggu.",
+"action": "Stickman arkeolog menemukan fondasi tembok benteng kuno beserta lapisan abu bekas kebakaran hebat."
+},
+"data": {
+"autoRotateSpeed": -0.012,
+"cards": [
+{
+"label": "EKSKAVASI HISARLIK, TURKI",
+"title": "Reruntuhan Benteng Asli Ditemukan",
+"value": "Bukti Zaman Perunggu",
+"subtitle": "Penggalian arkeologis mengungkap struktur kota benteng dan jejak kebakaran besar.",
+"highlight": true
+}
+]
+}
+}
+},
+{
+"id": 20,
+"start": 126.46,
+"end": 134.4,
+"duration": 7.94,
+"on_screen_text": "Runtuh Dari Dalam",
+"motion": "zoom_out",
+"transition": "fade",
+"visual": {
+"type": "three",
+"preset": "floating-cards",
+"colors": {
+"background": "#0F172A",
+"accent": "#10B981",
+"text": "#F8FAFC",
+"secondary": "#94A3B8",
+"surface": "#1E293B"
+},
+"camera": {
+"from": [0, 0.1, 5.3],
+"to": [0, 0.1, 6.2],
+"fov": 40,
+"lookAt": [0, 0.1, 0]
+},
+"stickman_scene": {
+"composition": "Visual simbolis 2D frontal menampilkan benteng batu kokoh dengan retakan cahaya hijau zamrud (#10B981) yang muncul dari bagian dalam gerbang.",
+"characters": "Satu stickman penjaga berdiri di dalam gerbang yang terbuka sendiri sementara tembok luar tetap utuh tanpa goresan.",
+"action": "Benteng kokoh perlahan terbelah dari sisi dalam, menegaskan pesan abadi sejarah Troya."
+},
+"data": {
+"autoRotateSpeed": 0.01,
+"cards": [
+{
+"label": "PELAJARAN ABADI SEJARAH",
+"title": "Benteng Terkuat Runtuh dari Dalam",
+"value": "Waspada Kelengahan",
+"subtitle": "Pertahanan luar yang mustahil ditembus dapat hancur ketika gerbang dibuka sendiri.",
+"highlight": true
+}
+]
+}
+}
+}
+]
+}
