@@ -11,19 +11,19 @@
   },
   "dependencies": {
     "@react-three/fiber": "^8.17.10",
-    "@remotion/cli": "4.0.230",
-    "@remotion/media-utils": "4.0.230",
-    "@remotion/three": "4.0.230",
-    "@remotion/transitions": "4.0.230",
+    "@remotion/cli": "4.0.547",
+    "@remotion/media-utils": "4.0.547",
+    "@remotion/three": "4.0.547",
+    "@remotion/transitions": "4.0.547",
     "commander": "^12.1.0",
     "isomorphic-dompurify": "^2.16.0",
     "jsdom": "^25.0.1",
     "jsonrepair": "^3.10.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "remotion": "4.0.230",
+    "remotion": "4.0.547",
     "three": "^0.169.0",
-    "zod": "^3.23.8"
+    "zod": "4.6.7"
   },
   "devDependencies": {
     "@types/jsdom": "^21.1.7",

@@ -121,8 +121,7 @@ export const AudioSchema = z.object({
   transcript: z.string().min(1, 'Path file transkrip SRT wajib diisi'),
 });
 
-export const SceneSchema = z
-  .object({
+const SceneBaseSchema = z.object({
     id: z.number().int().positive(),
     start: z.number().nonnegative('Waktu mulai tidak boleh negatif'),
     end: z.number().positive('Waktu selesai harus lebih dari 0'),
@@ -130,8 +129,9 @@ export const SceneSchema = z
     on_screen_text: z.string().nullable().optional(),
     motion: MotionTypeSchema.default('zoom_in'),
     transition: TransitionTypeSchema.default('fade'),
-  })
-  .superRefine((scene, ctx) => {
+});
+
+export const SceneSchema = SceneBaseSchema.superRefine((scene, ctx) => {
     if (scene.end <= scene.start) {
       ctx.addIssue({
         code: z.ZodIssueCode.custom,
@@ -220,7 +220,7 @@ export interface ResolvedProps {
   enableSubtitles: boolean;
 }
 
-export const ResolvedSceneSchema = SceneSchema.innerType().extend({
+export const ResolvedSceneSchema = SceneBaseSchema.extend({
   startFrame: z.number(),
   endFrame: z.number(),
 });

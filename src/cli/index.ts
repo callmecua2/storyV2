@@ -12,13 +12,11 @@ function slugifyTitle(title: string): string {
 
 function printSummary(result: ReturnType<typeof runPipeline>) {
   if (result.warnings.length) {
-    console.log('
-⚠️ Peringatan:');
+    console.log('\n⚠️ Peringatan:');
     result.warnings.forEach((warning) => console.log(`  - ${warning}`));
   }
   const threeCount = result.props.scenes.filter((s) => s.visual.type === 'three').length;
-  console.log('
-📊 Ringkasan:');
+  console.log('\n📊 Ringkasan:');
   console.log(`  - Adegan: ${result.summary.sceneCount} (${threeCount} WebGL 3D, ${result.summary.sceneCount - threeCount} 2D)`);
   console.log(`  - Durasi audio: ${result.summary.audioDurationSeconds}s`);
   console.log(`  - Durasi video: ${result.summary.totalDurationSeconds}s`);
@@ -45,8 +43,7 @@ options(program.command('validate').description('Validasi storyboard, audio tung
         enableSubtitles: opts.subtitles,
       });
       printSummary(result);
-      console.log('
-✅ Validasi berhasil.');
+      console.log('\n✅ Validasi berhasil.');
     } catch (error) {
       console.error(`
 ❌ ${error instanceof Error ? error.message : String(error)}`);
@@ -79,6 +76,7 @@ options(program.command('preview').description('Jalankan Remotion Studio')).acti
 options(program.command('render').description('Render video MP4'))
   .option('--draft', 'Render setengah resolusi pada 15fps', false)
   .option('--gl <renderer>', 'Renderer OpenGL Chromium untuk WebGL 3D (angle, swiftshader, egl)', 'angle')
+  .option('--chrome-mode <mode>', 'Chrome mode (headless-shell, chrome-for-testing)', 'headless-shell')
   .action((opts) => {
     const started = Date.now();
     try {
@@ -105,6 +103,7 @@ options(program.command('render').description('Render video MP4'))
           '--codec=h264',
           '--audio-codec=aac',
           `--gl=${opts.gl}`,
+          `--chrome-mode=${opts.chromeMode}`,
         ],
         { stdio: 'inherit' }
       );
